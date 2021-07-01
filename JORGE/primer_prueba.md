@@ -3,6 +3,6 @@
 
 ## Añadir una imagen a readme.
 
-![Texto de la imagen](REPOSITORIO-BOOTCAMP/git_commands.png)
+![Texto de la imagen](/JORGE/git_commands.png)
 
 ### Terminamos la prueba de readme
