@@ -8,6 +8,6 @@
 
 Con un curso hecho en UDEMY.
 
-!(C:\Users\vekat\OneDrive\Imágenes/Veronica.jpg)
+
 
 
