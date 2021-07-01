@@ -1,4 +1,13 @@
-Mi proyecto de vida es convertirme en Full stack development.
+## Creación de mi presentación
 
-Mi primer proyecto ha sido en HTML.
+### Mi proyecto de vida es convertirme en Full stack development.
+
+### Mi último proyecto ha sido con html, css y bootstrap.
+
+[Tingdog Site]: https://github.com/VekaTobias10/tindogsite 
+
+Con un curso hecho en UDEMY.
+
+![Soy yo] (OneDrive/Imágenes/Veronica.jpg)
+
 
