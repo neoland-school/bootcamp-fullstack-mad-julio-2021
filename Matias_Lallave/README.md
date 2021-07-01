@@ -20,5 +20,9 @@ Objetivos para este curso:
 
 ---
 
-Después de odiar las redes sociales durante años por motivos laborales, hace poco me hice un [Twitter personal]: https://twitter.com/giccho3_. Agredecería follows :)
+Después de odiar las redes sociales durante años por motivos laborales, hace poco me hice un [Twitter personal][Twitter]. Agredecería follows :)
 
+
+
+
+[Twitter]: https://twitter.com/giccho3_
