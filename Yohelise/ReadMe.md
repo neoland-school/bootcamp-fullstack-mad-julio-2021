@@ -4,4 +4,4 @@
 
 ## Vivo en Gijón y mola.
 
-!(C:\Users\yohel\Dropbox\Mi PC (LAPTOP-K2T7NL4I)\Desktop\PRACTICAS YOHE\Yohelise\Imagenes\12386.jpg)
+<https://www.turismoasturias.es/documents/11022/32591/velero-entrando-puerto-deportivo-gijon.jpg/3a2d2d81-75c3-49e9-81cf-50187616e755?t=1550072845199>
