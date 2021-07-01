@@ -20,7 +20,7 @@ Objetivos para este curso:
 
 ---
 
-Después de odiar las redes sociales durante años por motivos laborales, hace poco me hice un [Twitter personal][Twitter]. Agredecería follows :)
+Después de odiar las redes sociales durante años por motivos laborales, hace poco me hice un [Twitter personal][Twitter] porque para solicitar un piso de alquiler me pidieron redes sociales. Cuando les dije que no tenía me miraron como si fuera un asesino psicópata y obviamente me rechazaron. Así que me hice al menos una. Agredecería follows :)
 
 
 
