@@ -4,10 +4,10 @@
 
 ### Mi último proyecto ha sido con html, css y bootstrap.
 
-[Tingdog Site]: https://github.com/VekaTobias10/tindogsite 
+[Tingdog Site][https://github.com/VekaTobias10/tindogsite]
 
 Con un curso hecho en UDEMY.
 
-![Soy yo] (OneDrive/Imágenes/Veronica.jpg)
+![Soy yo] (Imágenes/Veronica.jpg)
 
 
