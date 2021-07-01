@@ -8,7 +8,7 @@ hola soy jean carlos
 
 - Zapato 3
 
-[!https://i1.wp.com/plus.cusica.com/wp-content/uploads/2017/09/zapato-cusica-plus.jpg?fit=1024%2C718&ssl=1]
+![https://i1.wp.com/plus.cusica.com/wp-content/uploads/2017/09/zapato-cusica-plus.jpg?fit=1024%2C718&ssl=1]
 
 Zapato 3 es una banda venezolana de rock alternativo muy relevante en la escena nacional y latinoamericana de los años ochenta y noventa. Estuvo conformada principalmente por los hermanos Álvaro Segura (guitarra y coros) y Carlos Segura (vocalista), Fernando Batoni (bajo), Jaime Verdaguer (teclados), Diego Márquez (batería en Amor, furia y languidez y Bésame y suicídate), Rafael Cadavieco (batería en Separación, Cápsula para volar) y César Domínguez (batería en Ecos punzantes del ayer)
 
