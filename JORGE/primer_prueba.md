@@ -1,2 +1,8 @@
-1-Practica de Pull Request
- 1.1 Es  una practica de como realizar un un Pull Request
+#  Practica de Pull Request
+  Esta es un práctica de como realizar un raedme 
+
+## Añadir una imagen a readme.
+
+![Texto de la imagen](/JORGE/git_commands.png)
+
+### Terminamos la prueba de readme
