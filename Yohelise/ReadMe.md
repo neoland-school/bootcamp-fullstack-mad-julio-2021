@@ -4,4 +4,4 @@
 
 ## Vivo en Gijón y mola.
 
-!PRACTICAS YOHE\Yohelise\Imagenes\12386.jpg
+!(PRACTICAS YOHE\Yohelise\Imagenes\12386.jpg)
