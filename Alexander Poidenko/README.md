@@ -1,1 +1,0 @@
-Alexander Poidenko test
