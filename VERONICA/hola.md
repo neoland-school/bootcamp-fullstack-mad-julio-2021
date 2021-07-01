@@ -8,6 +8,6 @@
 
 Con un curso hecho en UDEMY.
 
-![Soy yo] (Imágenes/Veronica.jpg)
+!(C:\Users\vekat\OneDrive\Imágenes/Veronica.jpg)
 
 
