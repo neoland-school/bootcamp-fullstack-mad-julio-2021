@@ -1,5 +1,18 @@
-    img {
-        text-align: center;
+    .contenedor {
+        display: flex;
+    }
+    
+    .naveg {
+        justify-content: flex-end;
+    }
+    
+    .naveg li {
+        display: inline-flex;
+        margin: 0 20px;
+    }
+    
+    div.home {
+        justify-content: center;
     }
     
     h1 {
