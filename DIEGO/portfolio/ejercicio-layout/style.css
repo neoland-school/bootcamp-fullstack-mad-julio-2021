@@ -1,0 +1,155 @@
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "menu main main main"
+        "footer footer footer footer"
+    ;
+    margin: 0;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+/*ELEMENTOS DE CABECERA✅*/
+
+.cabecera{
+    grid-area:header;
+    padding-top: 1rem;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column; /*SI NO ESPECIFICO FLEX-DIRECTION NO JUSTIFICA CON "SPACE-EVENLY"*/
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    
+}
+.listaCabecera{ /*Es la lista que contiene los elementos del menu header*/
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+.elementoCabecera{
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-evenly;
+    
+}
+
+/*ELEMENTOS DE MENU LATERAL✅*/
+.menuLateral{
+    grid-area:menu;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    align-items: center;
+    
+}
+.listaMenuLateral{
+    list-style-type: none;
+    
+
+}
+.elementoMenu{
+    text-decoration: none;
+}
+/*ELEMENTOS DE MUESTRAS✅*/
+.muestra{
+    grid-area:main;
+    grid-column: 3;
+    background-color:white;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.tituloReceta{
+    color:white;
+    font-size: larger;
+    font-weight: bolder;
+    position: absolute;
+    top: 20px;
+    left: 20%;
+}
+.nombreReceta{
+    font-size: larger;
+    font-weight: bolder;
+    
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+.fotoMuestra{
+    width: 100%;
+}
+.introReceta{
+    width: 80%;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;    
+}
+.botonReceta{
+
+    background-color: rgb(253, 93, 138);
+    color: white;  
+    width: 66%;
+    height: 2rem;
+    text-justify: center;
+    border-radius: 0.45em;
+    border-color: rgb(253, 93, 138);
+    
+}
+.textoLogos{
+    color:rgb(253, 93, 138);
+    font-weight: bold;  
+    letter-spacing: 2px; 
+    padding-right: 1rem;
+}
+.logoReceta{
+    width:1.5rem;
+    height: 1.5rem;
+}
+.iconosReceta{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.elemReceta{
+    display: inline-block;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+.acompLogo{
+    margin-top: 0px;
+}
+/*ELEMENTOS DE PIE✅*/
+.piePagina{
+    grid-area:footer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: gray;
+    color: gray;
+}
+.linkArriba{
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: gray;
+
+}
+.fotoLogo{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+}
