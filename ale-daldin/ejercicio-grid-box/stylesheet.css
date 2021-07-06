@@ -8,6 +8,7 @@
         grid-template-columns: 33% 66%;
         grid-template-rows: repeat(3 auto);
         grid-gap: 1rem;
+        justify-items: stretch;
 
       }
 
