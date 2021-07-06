@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "IndieFlower";
+    src: url(./assets/IndieFlower-Regular.ttf);
+    font-weight:400;
+    font-style:normal;
+}
+@font-face {
+    font-family: "Festive-Regular";
+    src: url(./assets/Festive-Regular.ttf);
+    font-weight:400;
+    font-style:normal
+}
+@font-face {
+    font-family:"BonaNova";
+    src: url(assets/BonaNova-Regular.ttf);
+    font-weight:400;
+    font-style:normal;
+}
+@font-face {
+    font-family:"BonaNova";
+    src: url(assets/BonaNova-Italic.ttf);
+    font-weight:400;
+    font-style:italic;
+}
+@font-face {
+    font-family:"BonaNova";
+    src: url(assets/BonaNova-Bold.ttf);
+    font-weight:700;
+    font-style:bold;
+}
+.font-indieflower{
+    font-family: "IndieFlower";
+}
+
+.font-festive-regular{
+    font-family:"Festive-Regular"
+}
+
+.font-BonaNova{
+    font-family:"BonaNova";
+    font-style: italic;
+}
