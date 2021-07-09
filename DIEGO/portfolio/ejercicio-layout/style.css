@@ -1,3 +1,10 @@
+/* ESTO ES UN "RESET", ES UNA FORMA DE COMENZAR A DEFINIR LOS ESTILOS AJUSTANDO LOS ESTILOS A NUESTRO GUSTO. ES EL PRIMER PASO AL COMENZAR A HACER CSS
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*/
 
 .contenedor{
     display: grid;
@@ -71,8 +78,8 @@
     font-size: larger;
     font-weight: bolder;
     position: absolute;
+    width: 100%;
     top: 20px;
-    left: 20%;
 }
 .nombreReceta{
     font-size: larger;
