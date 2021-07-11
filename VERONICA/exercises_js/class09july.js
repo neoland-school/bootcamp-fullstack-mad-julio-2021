@@ -1,18 +1,18 @@
 
 
-let sumAcc = 0;
-// sumAcc += 1;
-// sumAcc += 2; // SumAcc + sumAcc = 2; Es equivalente
-// sumAcc += 3; //SumaAcc + 
-// sumAcc += 4;
-// sumAcc += 5;
-// sumAcc += 6;
-// sumAcc += 7;
-// sumAcc += 8;
-// sumAcc += 9;
-sumAcc += 10;
+// let sumAcc = 0;
+// // sumAcc += 1;
+// // sumAcc += 2; // SumAcc + sumAcc = 2; Es equivalente
+// // sumAcc += 3; //SumaAcc + 
+// // sumAcc += 4;
+// // sumAcc += 5;
+// // sumAcc += 6;
+// // sumAcc += 7;
+// // sumAcc += 8;
+// // sumAcc += 9;
+// sumAcc += 10;
 
-console.log(sumAcc);
+// console.log(sumAcc);
 
 /**
  * Una carretera tiene como limite de velocidad 90Km/h
@@ -59,6 +59,8 @@ console.log(sumAcc);
 // else {
 //   console.log("Es el numero menor");
 // }
+
+console.log('Hola mundo');
 
 // - Escribir un programa que recorra los enteros de una variable dada y vaya imprimendo por pantalla si esos son pares o impares (Easy)
 
