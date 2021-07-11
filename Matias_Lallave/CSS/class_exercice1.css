@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Bebas_Neue";
+    src: url(./Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Qahiri";
+    src: url(./Qahiri/Qahiri-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 100;
+    font-display: swap;
+    src: url(./Roboto/Roboto-ThinItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(./Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./icons/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Material Icons Round';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./icons/MaterialIconsRound-Regular.otf) format('truetype');
+} 
+
+@font-face {
+    font-family: 'Material Icons TwoTone';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./icons/MaterialIconsTwoTone-Regular.otf) format('truetype');
+} 
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  .material-icons-twotone {
+    font-family: 'Material Icons TwoTone';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  .material-icons-round {
+    font-family: 'Material Icons Round';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  .material-icons.md-18 { font-size: 18px;}
+  .material-icons.md-24 { font-size: 24px;}
+  .material-icons.md-36 { font-size: 36px;}
+  .material-icons.md-48 { font-size: 48px;}
+
+  .material-icons.pink {color: rgb(255, 0, 191);}
+
+.bebasfont{
+    font-family: "Bebas_Neue";
+}
+
+.qahirifont{
+    font-family: "Qahiri";
+}
+
+.robotoblackfont{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+}
+
+.robotothinitalicfont{
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 100;
+}
