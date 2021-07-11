@@ -1,6 +1,6 @@
 /* 1) CONTAMINACIÓN */
 
-/*let cont= 80;
+let cont= 80;
 const MaxCont= ( cont > 65);
 const AllowedCont= (cont < 65);
 
@@ -9,11 +9,11 @@ if (MaxCont){
 }
 else {
   console.log ('Puede Circular a 90km/');
-}*/
+}
 
 /* 2) SEMAFORO */
 
-/*let color= 'AZUL'
+let color= 'AZUL'
 const ColorR= 'ROJO';
 const ColorAI= 'AMBAR_INTERMITENTE';
 const ColorAF= 'AMBAR_FIJO';
@@ -30,11 +30,11 @@ else if (DontPass) {
 }
 else { 
     console.log ('el dato ingresado no es correcto');
-}*/
+}
 
 /* 3) NOTA_ALUMNOS */
 
-/*const Nota=10
+const Nota=10
 if (Nota < 5){
     console.log ('Suspenso');
 }
@@ -53,32 +53,32 @@ else if  (Nota === 10) {
 }
 else {
     console.log ('Dato Incorrecto');
-}*/
+}
 
 /* 4) NUMERO_MAYOR */
 
-/*let numOne= 1
+let numOne= 1
 let numTwo= 50
 if ( numOne > numTwo) {
     console.log(numOne);
 }
 else {
     console.log(numTwo);
-}*/
+}
 
 /* 5) PAR_IMPAR */
 
-/*let number= 8
+let number= 8
 if (number % 2===0){
     console.log ('Numero Par');
 }
 else {
     console.log('Numero Impar');
-}*/
+}
 
 /* 6) FIZZBUZZ */
 
-/*let i=1
+let i=1
 let number=0
 while (number >= 0 && number < 100) {
     number = number+ i;
@@ -98,12 +98,12 @@ while (number >= 0 && number < 100) {
 
 
 
-}*/
+}
 
 
 /* 7) TRIANGULO */
 
-/*let number= 1
+let number= 1
 if (number <= 9) {
     let i = 1
     while (number === 1) {
@@ -163,11 +163,11 @@ if (number <= 9) {
 }
 else {
     console.log ('incorrecto');
-}*/
+}
 
 /* 8) FIBONACCI */
 
-/*let numA= 0
+let numA= 0
 let numB=1
 
 while ( numA <= 1000 && numB <= 1000) {
@@ -177,4 +177,4 @@ while ( numA <= 1000 && numB <= 1000) {
     console.log (numA);
     console.log ('numeroB');
     console.log (numB);
-}*/
+}
