@@ -2,128 +2,169 @@
 
 console.log("HOLA MUNDO");
 
+// 2. Escribir el typeof de cada variable 
 
-// let myFirstString ='Verónica';
-// let myFirstNumber = 27;
-// let myBoolean = true;
-// const FIRST_CONST = 'Hello World';
-// let myNull = null;
-// const SECOND_CONST = 12345;
-// let notFound;
-// const FIRTS_CONST = 'Hello Bad Const';
+let myName ='Verónica';
+let myAge = 27;
+let myFirstBoolean = true;
+let mySecondBoolean = false;
+const HELLO_WORLD = 'Hello World';
+let isNull = null;
+const JUST_NUMBERS = 12345;
+let notFound;
+const HELLO_WORLD = 'Hello Bad Const'; //No se debe repetir una variable CONST
 
-// console.log(myFirstString);
-// console.log(typeof myFirstString);
-// console.log();
-// console.log(myFirstNumber);
-// console.log(typeof myFirstNumber);
-// console.log();
-// console.log(myBoolean);
-// console.log(typeof myBoolean);
-// console.log();
-// console.log(FIRST_CONST);
-// console.log(typeof FIRST_CONST);
-// console.log();
-// console.log(myNull);
-// console.log(typeof myNull);
-// console.log();
-// console.log(SECOND_CONST);
-// console.log(typeof SECOND_CONST);
-// console.log();
-// console.log(notFound);
-// console.log(typeof notFound);
+console.log(myName);
+console.log(typeof myName); //String
 
-// let myNumberString = undefined;
-// let myWordString = 3;
+console.log(myAge);
+console.log(typeof myAge); //Number
 
-// console.log(myNumberString+myWordString);
-// console.log(typeof (myNumberString+myWordString));
+console.log(myFirstBoolean);
+console.log(typeof myFirstBoolean); //Boolean
 
-// result = myNumberString + myWordString;
-// console.log(result);
-// console.log(typeof result);
+console.log(mySecondBoolean);
+console.log(typeof mySecondBoolean); //Boolean
+
+console.log(HELLO_WORLD);
+console.log(typeof HELLO_WORLD); //String
+
+console.log(isNull);
+console.log(typeof isNull);
+
+console.log(HELLO_WORLD);
+console.log(typeof HELLO_WORLD);
+
+console.log(JUST_NUMBERS);
+console.log(typeof JUST_NUMBERS);
+
+console.log(notFound);
+console.log(typeof notFound);
+
+
+// Sumar una variable de tipo string con una de tipo número
+
+let typeString = 'Este es mi tipo de dato string';
+let typeNumber = 5;
+
+let myResult = typeString + typeNumber;
+
+console.log(myResult);
+console.log(typeof myResult);
+////////////////////////////////////////////////////// Siguiendo con las mismas variables
+
+typeString = '21';
+typeNumbe = 5;
+
+myResult= typeString + typeNumber;
+
+console.log(myResult);
+console.log(typeof myResult);
+
 
 //Crear dos variables numéricas y realizar su suma, resta multiplicación y division
 
-// let numbOne = 30;
-// let numbTwo = 15;
+let numbOne = 30;
+let numbTwo = 15;
 
-// console.log(numbOne + numbTwo);
-// console.log(numbOne - numbTwo);
-// console.log(numbOne * numbTwo);
-// console.log(numbOne / numbTwo);
+console.log(numbOne + numbTwo);
+console.log(numbOne - numbTwo);
+console.log(numbOne * numbTwo);
+console.log(numbOne / numbTwo);
 
 // //Crear dos variables string y concatenarlas
 
-// let firstString = 'Esta es';
-// let secondString = 'Cadena';
+let firstString = 'Esta es';
+let secondString = 'Cadena';
 
-// let firstConcatenation = firstString + ' ' + 'mi primera' + ' ' + secondString;
-// console.log(firstConcatenation);
+let firstConcatenation = firstString + ' ' + 'mi primera' + ' ' + secondString;
+console.log(firstConcatenation);
 
 // //Imprimir la longitud del string resultante del ejercicio anterior
 
-// console.log(firstConcatenation.length);
+console.log(firstConcatenation.length);
 
 //Ejercicio que guarde en una variable los grados Celsius (X) e imprima por pantalla sus correspondientes grados Farenheit "X ºC son YºF"
 
-// let x = 1;
+let x = 6;
 
-// let operation = (x * 9 / 5) + 32;
+let operation = (x * 9 / 5) + 32;
 
 
-// let resultGrade= x + 'ºC' + 'son' + operation + 'ºF';
-// console.log(resultGrade);
+let resultGrade= x +''+ 'ºC' + '' + 'son' + '' + operation + '' + 'ºF';
+console.log(resultGrade);
 
 //Imprimir por consola 'true' o 'false' si una variable número está entre 10 y 100
 
-// let numberTen = 9;
-// let numberOneHundred = 100;
+let myNumber = 9;
 
-// let overTen = numberTen <= 10; //True
-// let underOneHundred = numberOneHundred >= 100; //True
+let lessThan100 = myNumber <= 100; //True
+let moreThan10 = myNumber >= 10; //true
 
-// console.log(!overTen && underOneHundred); //False
+console.log (lessThan100&&moreThan10); //true
 
-// let numberTen = 11;
-// let numberOneHundred = 100;
-
-// let overTen = numberTen <= 10; //True
-// let underOneHundred = numberOneHundred >= 100; //True
-
-// console.log(!overTen && underOneHundred); //True
 
 //Con el ejercicio de la calculadora de grados celsius, imprimir si una variable en ºC temperatura esta es mayor de 87 ºF
 
-// let x = 30;
+let x = 30;
  
-// let operation = (x * 9 / 5) + 32; //95 ºF siendo x = 35
+let operation = (x * 9 / 5) + 32; //95 ºF siendo x = 35
 
-// console.log(operation > 87);
+console.log(operation > 87);
 
 //Crear una variable numerica y proporcionarle un valor. imprimir por pantalla si es par o impar
 
-// let numberPar = 3;
-// let numberImpar =13;
 
-// let result = numberPar % 2;
+let myNumber = 8;
 
-// console.log(result == 0);
+let operation = myNumber % 2;
+
+
+if (operation === 0){
+    console.log('par');
+}
+else {
+    console.log('impar');
+}
+
 
 //Crear una variable que represente el numero de hijos e indicar por pantalla si es familia numerosa o no
 
-// let greatFamily = 4;
+let childNumber = 4;
 
-// console.log(greatFamily >= 3 && greatFamily <= 10);
+
+if (childNumber > 3){
+    console.log ('FAMILIA NUMEROSA');
+}
+else {
+    console.log ('NO ES FAMILIA NUMEROSA');
+}
+
 
 // Crear dos variables que representen el peso y la altura e indicar por pantalla si esa persona tiene "Obesidad de clase II" o no según la OMS
 
-// let myWeight = 68;
-// let myHeight = 1.8;
+const myWeight = 74;
+const myHeight = 1.8;
 
-// let IMC = myWeight/ myHeight ** 2;
+const IMC = myWeight/ myHeight ** 2;
 
-//  console.log(IMC  >= 30);
+ console.log(IMC  >= 30);
+
+
+// Crear Una variable que represente el saldo de tu cuenta. Crear 4 variables numéricas que cada una represente un item de tu cesta (ej: tomates, pescado, etc) de la compra y dales un precio. Imprimir por pantalla si tienes saldo suficiente o no para pagar la compra.
+
+let myMoney = 10;
+
+const mytomato = 2;
+const myOnion = 1;
+const myOrange = 3;
+const myJuice = 4;
+
+mylistShopping = mytomato + myOnion + myOrange + myJuice;
+
+console.log(mylistShopping <= myMoney);
+
+
 
 
 

@@ -1,16 +1,18 @@
 
 
-// let sumAcc = 0;
+let sumAcc = 0;
 // sumAcc += 1;
-// sumAcc += 2; // SumACC + sumAcc = 2; Es equivalente
-// sumAcc += 3;
+// sumAcc += 2; // SumAcc + sumAcc = 2; Es equivalente
+// sumAcc += 3; //SumaAcc + 
 // sumAcc += 4;
 // sumAcc += 5;
 // sumAcc += 6;
 // sumAcc += 7;
 // sumAcc += 8;
 // sumAcc += 9;
-// sumAcc += 10;
+sumAcc += 10;
+
+console.log(sumAcc);
 
 /**
  * Una carretera tiene como limite de velocidad 90Km/h
