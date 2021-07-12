@@ -48,7 +48,7 @@ function dataType(data) {
     return typeof data;
 }
 
-let test = 7464;
+const test = 7464;
 
 console.log("What type is " + test + "?: " + dataType(test));
 
@@ -88,16 +88,16 @@ function circlePerimeter(r) {
     return 2 * Math.PI * r;
 }
 
-let height = 5;
-let width = 6;
+const height = 5;
+const width = 6;
 
-let squareSide = 6;
+const squareSide = 6;
 
-let triangleSide1 = 6;
-let triangleSide2 = 16;
-let triangleSide3 = 8;
+const triangleSide1 = 6;
+const triangleSide2 = 16;
+const triangleSide3 = 8;
 
-let circleRadius = 7;
+const circleRadius = 7;
 
 console.log(
     "Given a rectangle with a height of " +
@@ -199,9 +199,7 @@ function calculator(a, b, operation) {
             calcResult = percentage(a, b);
             break;
         default:
-            console.log(
-                "ERROR: Introduce a valid operation (sum, subtract, multiply, percentage)"
-            );
+            console.log("ERROR: Introduce a valid operation (sum, subtract, multiply, percentage)");
             break;
     }
 
@@ -212,16 +210,7 @@ const numberA = 40;
 const numberB = 8;
 const operationCalc = "percentage";
 
-console.log(
-    "CALCULATOR: " +
-    numberA +
-    " " +
-    operationCalc +
-    " " +
-    numberB +
-    " = " +
-    calculator(numberA, numberB, operationCalc)
-);
+console.log("CALCULATOR: " + numberA + " " + operationCalc + " " + numberB + " = " + calculator(numberA, numberB, operationCalc));
 
 // ------EXERCISE 7------
 
@@ -256,7 +245,7 @@ function validDNI(dni) {
 
     // Intializing NIF and DC separatedly
 
-    let controlDigitDNI = dni.charAt(8);
+    const controlDigitDNI = dni.charAt(8);
     let numberToStringDNI = '';
     let valid;
 
@@ -264,7 +253,7 @@ function validDNI(dni) {
         numberToStringDNI = numberToStringDNI + dni.charAt(i);
     }
 
-    let numberDNI = parseInt(numberToStringDNI);
+    const numberDNI = parseInt(numberToStringDNI);
 
     //Checking validation with data provided by Spanish Government (case-resistant)
 
@@ -345,6 +334,6 @@ function validDNI(dni) {
     return valid;
 }
 
-let testDNI = 'y5471820l';
+let testDNI = 'Y5471820L';
 
 console.log('Is ' + testDNI + ' a valid DNI?: ' + validDNI(testDNI));
