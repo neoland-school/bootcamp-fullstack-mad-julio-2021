@@ -1,0 +1,154 @@
+/* globles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+@font-face {
+    font-family: "iberia";
+    src: url(/fonts/lato/iberiaIFonts/iberia.woff);
+}
+
+body {
+    --color-RedIberia: #D7192D;
+    font-family: 'iberia';
+}
+
+.nav-country::before {
+    content: "\e988";
+    font-size: 15px;
+}
+
+.nav-empresas::before {
+    content: "\ea66";
+    font-size: 15px;
+}
+
+.nav-ayuda::before {
+    content: "\e912";
+    font-size: 15px;
+}
+
+.nav-dudas::before {
+    content: "\e91d";
+    font-size: 15px;
+}
+
+.nav-registro::before {
+    content: "\e9db";
+    font-size: 15px;
+}
+
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-RedIberia);
+    height: 70px;
+    width: auto;
+}
+
+.logo {
+    width: 11.25rem;
+    height: 2.3rem;
+    padding-top: 27px;
+    padding-right: 1.875rem;
+    padding-left: 2.5rem;
+    padding-bottom: 17px;
+}
+
+.nav-principal {
+    display: flex;
+    color: white;
+    padding-top: 27px;
+    padding-right: 1.875rem;
+    padding-left: 2.5rem;
+    padding-bottom: 17px;
+}
+
+.nav-principal li {
+    margin-right: 2rem;
+}
+
+
+/* Nav 2 */
+
+.style-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.style-box {
+    border-left: 2px solid darkgrey;
+    width: 14.28%;
+    height: 40px;
+}
+
+.style-box-malapraxis {
+    border-right: 2px solid darkgrey;
+}
+
+.style-box p {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+
+/* migas de pan */
+
+.contenedor {
+    display: flex;
+    flex-flow: column;
+    width: 960px;
+    height: 350px;
+    align-items: center;
+    background-color: #eee;
+}
+
+.contenedor_lista ul {
+    display: flex;
+    width: 960px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    background-color: #eee;
+}
+
+.contenedor_lista img {
+    width: 16px;
+}
+
+.contenedor_lista a {
+    text-decoration: none;
+}
+
+.contenedor_lista li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.contenedor_lista .move1 {
+    margin-left: auto;
+}
+
+.mave1 img {
+    margin: 5px;
+}
+
+a:hover {
+    color: rgb(165, 42, 42);
+    text-decoration: underline;
+}
+
+img:hover {
+    color: brown;
+}
