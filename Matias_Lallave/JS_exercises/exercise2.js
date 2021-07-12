@@ -89,7 +89,7 @@ for (let j = 4; j >= 1; j--){
 
 console.log("\nEXERCISE 5");
 
-const fibonacciN = 7;
+const fibonacciN = 70;
 
 let iter = 2;
 
