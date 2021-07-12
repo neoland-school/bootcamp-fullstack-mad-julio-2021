@@ -69,19 +69,17 @@ console.log("\nEXERCISE 4");
 
 // You can draw any triangle if intialising j = (i top margin)-1 
 
-for (let i = 1; i <= 12; i++){           
+for (let i = 1; i <= 5; i++){           
     let asterisk = '';
     for (let k = 1; k <= i ; k++){
-        
         asterisk = asterisk + '*';
     }
     console.log(asterisk);
 }
 
-for (let j = 11; j >= 1; j--){
+for (let j = 4; j >= 1; j--){
     let asterisk = '';
     for (let k = 1; k <= j ; k++){
-        
         asterisk = asterisk + '*';
     }
     console.log(asterisk);
@@ -91,13 +89,13 @@ for (let j = 11; j >= 1; j--){
 
 console.log("\nEXERCISE 5");
 
-const fibonacciN = 10;
+const fibonacciN = 7;
 
-let iter = 3;
+let iter = 2;
 
 let fibonacciValue = null;
 
-let n = 1;
+let n = 0;
 let m = 1;
 
 if (fibonacciN < 0) {
@@ -105,8 +103,6 @@ if (fibonacciN < 0) {
 } else if (fibonacciN === 0) {
     console.log('F(' + fibonacciN + ') = 0'); 
 } else if (fibonacciN === 1) {
-    console.log('F(' + fibonacciN + ') = 1'); 
-} else if (fibonacciN === 2) {
     console.log('F(' + fibonacciN + ') = 1'); 
 } else {
     while (iter <= fibonacciN){
