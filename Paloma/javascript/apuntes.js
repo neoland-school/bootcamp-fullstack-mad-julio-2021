@@ -119,10 +119,16 @@
 // SumAcc += i;
 // }
 // console.log (SumAcc);
-let SumAcc = 0;
-let i=0;
-while (i<=10000){
-    SumAcc += i;
-    i++;
-}
-console.log(SumAcc);
+// let SumAcc = 0;
+// let i=0;
+// while (i<=10000){
+//     SumAcc += i;
+//     i++;
+// }
+// console.log(SumAcc);
+
+
+
+//FUNCIONES//
+
+function convert ()
