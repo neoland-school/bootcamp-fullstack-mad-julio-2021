@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctame</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cv.html">Experiencia</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="contact.html">Contáctame</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Contáctame</h1>
+    <p><i>simulado@gmail.com / +3412345678</i></p>
+    <br>
+    <p>O también si lo deseas, contáctame directamente aquí, completando los siguientes campos.</p>
+    <p>A la brevedad me pondré en contacto contigo a través del medio que selcciones.</p>
+    <br>
+
+    <form action="thanks.html">
+        <fieldset>
+            <legend>Contáctame</legend>
+            <label for="name">Nombre</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Apellido</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="city">Indica desde dónde me contactas</label>
+            <select name="ciudad">
+                <option value="bcn">BCN</option>
+                <option value="mad">MAD</option>
+                <option value="bsas">BSAS</option>
+                <option value="bog">BOG</option>
+                <option value="sev">SEV</option>
+            </select>
+            <br>
+            <label for="contact">Cómo quieres que me comunique contigo</label><br>
+            <label for="contact_option_tel"></label>
+            <input name="contact_option_tel" type="radio" value="form" /><br>
+            <p>Contactar por teléfono</p>
+            <label for="contact_option-mail"></label>
+            <input name="contact_option-mail" type="radio" value="email"/>
+            <p>Contactar por e-mail</p><br>
+            <label for="message">Déjame un mensaje</label><br>
+            <textarea rows="10" cols="30" name="comment" maxlength="140"></textarea><br><br>
+            <input type="submit" value="Submit"><br><br>
+        </fieldset>
+    </form>
+    <footer>
+        <p>gracias/thank you/obrigado/gràcies/terima kasi/vinaka</p>
+        <address>Alejandra Daldin</address>
+        <b><i>Estudiante del Bootcamp 2021 Full Stack web developer</i></b>---->
+        <a href="mailto: simulado@gmail.com">E-mail me</a>
+    </footer>
+</body>
+
+</html>
