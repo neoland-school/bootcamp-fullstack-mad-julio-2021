@@ -1,3 +1,3 @@
 
-
-console.log('Hello Git');
+const myVarRequested = 'Hello Git';
+console.log(myVarRequested);
