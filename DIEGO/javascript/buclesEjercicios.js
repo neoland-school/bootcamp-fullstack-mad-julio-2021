@@ -6,13 +6,13 @@
 //          Buzz, si es múltiplo de 5
 //          FizzBuzz, si es múltiplo de 3 y 5 a la vez
 // -Escriba por pantalla un programa que pinte el siguiente patrón: (Hard)
-// *  
-// * *  
-// * * *  
-// * * * *  
-// * * * * *  
-// * * * *  
-// * * * 
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+// * * * *
+// * * *
 // * *
 // *
 // - Ejercicio que calcule el valor de la sucesión de fibonacci de una variable. Implementar la solución con un while (Hard)
@@ -78,37 +78,29 @@ let fibo = 0;
 let fiboTemp1 = 0;
 let fiboTemp2 = 0;
 let check = 0;
+let rango = 0;
 const nombre = 'F';
 
-while (i < 10) {
+while (i < 18) {
     if (i === 0) {
         fibo = 0;
         fiboTemp1 = fibo;
-        console.log(nombre + i + (': ') + fibo);
-        i++;
     } else if (i === 1) {
         fibo = 1;
         fiboTemp2 = fibo;
-        console.log(nombre + i + (': ') + fibo);
-        i++;
     } else {
 
         fibo = fiboTemp1 + fiboTemp2;
-        console.log(nombre + i + (': ') + fibo);
+
         if (i === 2) {
             fiboTemp1 = 1;
-            i++;
         } else {
             fiboTemp2 = fiboTemp1;
             fiboTemp1 = fibo;
-            i++;
         }
     }
+    i++;
+    rango = i - 1;
+    console.log(nombre + rango + (': ') + fibo);
 
 }
-
-
-
-
-
-
