@@ -69,7 +69,7 @@
 
 // fibonacci
 let number = 70;
-let fibo1 = 1;
+let fibo1 = 0;
 let fibo2 = 1;
 
 
@@ -82,9 +82,9 @@ while (fibo1 < number && fibo2 < number) {
 
         fibo2 += fibo1
 
-        if (fibo2 > number) {
-            break
-        }
+        // if (fibo2 > number) {
+        //     break
+        // }
     }
 
     console.log(fibo1 + fibo2)
