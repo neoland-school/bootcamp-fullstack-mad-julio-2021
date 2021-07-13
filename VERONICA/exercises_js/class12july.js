@@ -149,8 +149,62 @@
 
 // - Crear las funciones que simulen una calculadora (Suma, Resta, multiplicaciones, divisiones y porcentajes)
 
-function addition (a,b){
-    return a + b;
+// //ADDITION
+// function addition (a,b){
+//     return a + b;
+// }
+
+// console.log(addition(5,6));
+
+// //SUBTRACTION
+// function subtraction (c,d){
+//     return c - d;
+// }
+
+// console.log(subtraction(16,6));
+
+// //MULTIPLICATION
+// function multiplication (e,f){
+//     return e * f;
+// }
+
+// console.log(multiplication(6,6));
+
+// //DIVISION
+
+// function division(g,h){
+//    return Math.floor(g/h);
+// }
+
+// console.log(division (8,3));
+
+// //PERCENTAGE
+
+// function percentage(number1, operPercentage){
+//     return Math.floor((number1 * operPercentage)/100) ;
+//  }
+
+//  let number1 = 20; 
+//  let operPercentage = 32;
+ 
+//  console.log(percentage(operPercentage,number1));
+
+//  Crear una función que dado una URL (Se representa con un string) me diga o no si pertenece al dominio de github.
+
+// function url (namepage){
+
+// if ( namepage.includes('github')){
+//     return true;
+// } else{
+//     return false;
+// }
+// }
+
+// console.log(url('https://www.w3resource.com/javascript-exercises/javascript-object-exercise-12.php'));
+
+// - Crear una función calculadora que reciba como parametros: Dos operandos y la función que se quiera utilizar para calcular. (Hard)
+// 	Ejemplo calc(3,4,add) devuelve  7
+
+function calculator (a,b){
+    
 }
-
-
