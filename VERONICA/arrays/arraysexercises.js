@@ -55,24 +55,17 @@
 // - - - - - - - - - -                                                                                           
 // - - - - - - - - - - 
 
-// function guion (){
-//     let dibujo ='';
-//     for (let i = 0; i<10;i++){
-//       dibujo += ' -';
-//     } 
-//     console.log(dibujo);
-// }
+function guion (){
+    let dibujo ='';
+    for (let i = 0; i<10;i++){
+      dibujo += ' -';
+    } 
+    console.log(dibujo);
+}
 
-// guion();
-// guion();
-// guion();
-// guion();
-// guion();
-// guion();
-// guion();
-// guion();
-// guion();
-// guion();
+guion();
+
+
 
 // Escribe una función que dado un array bidimensional, devuelva un array con los valores de la diagonal (Medium)
 
@@ -92,10 +85,10 @@
 
 //PRACTICANDO IF/ELSE
 
-let day = 'Sunday';
+// let day = 'Sunday';
 
-if (day === 'Saturday' || day === 'Sunday') {
-    console.log('Enjoy the weekend!');
-  } else {
-    console.log('Do some work.');
-  }
+// if (day === 'Saturday' || day === 'Sunday') {
+//     console.log('Enjoy the weekend!');
+//   } else {
+//     console.log('Do some work.');
+//   }
