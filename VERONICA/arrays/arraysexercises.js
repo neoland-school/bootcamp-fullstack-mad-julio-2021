@@ -76,6 +76,10 @@
 
 // Escribe una función que dado un array bidimensional, devuelva un array con los valores de la diagonal (Medium)
 
+//Escribir una funcion
+// dandole un array bidimensional
+// devuelva un array con los valores de la diagonal
+
 // let arrayBidi = [[1,2,3],[4,5,6],[7,8,9]];
 
 // function devolver (arrayBidi){
@@ -84,6 +88,9 @@
 // }
 
 // console.log(arrayBidi[a,b,c]);
+
+
+//PRACTICANDO IF/ELSE
 
 let day = 'Sunday';
 
