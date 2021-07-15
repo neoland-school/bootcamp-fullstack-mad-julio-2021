@@ -183,34 +183,13 @@ console.log("Is this url a GitHub url?: " + itsGitHub(urltest));
 console.log("\nEXERCISE 7");
 
 function calculator(a, b, operation) {
-    let calcResult = null;
-
-    switch (operation) {
-        case "sum":
-            calcResult = sum(a, b);
-            break;
-        case "subtract":
-            calcResult = subtract(a, b);
-            break;
-        case "multiply":
-            calcResult = multiply(a, b);
-            break;
-        case "percentage":
-            calcResult = percentage(a, b);
-            break;
-        default:
-            console.log("ERROR: Introduce a valid operation (sum, subtract, multiply, percentage)");
-            break;
-    }
-
-    return calcResult;
+    return operation(a,b);
 }
 
 const numberA = 40;
 const numberB = 8;
-const operationCalc = "percentage";
 
-console.log("CALCULATOR: " + numberA + " " + operationCalc + " " + numberB + " = " + calculator(numberA, numberB, operationCalc));
+console.log("CALCULATOR: " + numberA + " " + '% of' + " " + numberB + " = " + calculator(numberA, numberB, percentage));
 
 // ------EXERCISE 7------
 
