@@ -1,69 +1,54 @@
 // 1- (Easy) Crear una funcion que dado un array numeros me diga si todos los numeros son mayores que 10
 
 
-// let arrNumberOne = [101, 9, 160, 30, 120,];
+let arrNumberOne = [101, 9, 160, 30, 120,];
 
-// function greatherThanTen (arr){
-//    return arr > 10;
-// }
+function greatherThanTen (arr){
+   return arr > 10;
+}
 
 // console.log(arrNumberOne.every(greatherThanTen));
 
 // 2- (Easy) Crear una funcion que dado un array numeros me diga si hay alguno mayor que 10
 
-// let arrNumberTwo = [5, 6, 7, 2, 1, 4, 8];
+let arrNumberTwo = [5, 6, 7, 2, 1, 4, 8];
 
-// function anythingwith10(value){
-//     return value > 10;
-// }
+function anythingwith10(value){
+    return value > 10;
+}
 
-// console.log(arrNumberTwo.some(anythingwith10));
+console.log(arrNumberTwo.some(anythingwith10));
 
 // 3- (Easy) Crear una funcion que dado un array de strings, devuelva un array sin modificar el de entrada, con todos los strings en mayúsculas
 
-// let arrStr = ['Uno', 'Dos', 'Tres', 'Cuatro','Cinco'];
+let arrStr = ['Uno', 'Dos', 'Tres', 'Cuatro','Cinco'];
 
-// function modificationUpperCase (value){
-//     return value.toUpperCase();
-// }
+function modificationUpperCase (value){
+    return value.toUpperCase();
+}
 
-// console.log(arrStr.map(modificationUpperCase)); //.map(); sin modifica la primera es decir la de arriba;
+console.log(arrStr.map(modificationUpperCase)); //.map(); sin modifica la primera es decir la de arriba;
 
 // 4- (Easy) Crear una funcion que dado un array de strings, modifique el array con todos los strings en mayúsculas
 
-// let arrStrTwo = ['Rock', 'Metal', 'Pop', 'Electrónica'];
+let arrStrTwo = ['Rock', 'Metal', 'Pop', 'Electrónica'];
 
-// for (let i = 0; i<arrStrTwo.length; i++){
-//     arrStrTwo[i]=arrStrTwo[i].toLocaleUpperCase();
-// }
+for (let i = 0; i<arrStrTwo.length; i++){
+    arrStrTwo[i]=arrStrTwo[i].toLocaleUpperCase();
+}
 
-// console.log(arrStrTwo);
+console.log(arrStrTwo);
 
 
 
 
 // 5- (Easy) Crear una función que dado un array elimine el elemento que se encuentra en la mitad (redondeada hacia abajo)
 
-let arrStrThree = ['enero', 'febrero', 'Marzo', 'Abril', 'Mayo'];
+// let arrStrThree = ['enero', 'febrero', 'Marzo', 'Abril', 'Mayo'];
 
-// eliminar
-// ubicado en la mitad
-// redondeado hacia abajo
-
-
-function removeMiddleElemt (arr){
-    
-    for (i = 0; i<arr.lenght-1; i++){
-         if ()
-    }
-}
-
-
-
-// console.log(arrStrThree.findIndex[]);
-
-// console.log(Math.floor(5.263));
-
+// // eliminar
+// // ubicado en la mitad
+// // redondeado hacia abajo
 
 
 
