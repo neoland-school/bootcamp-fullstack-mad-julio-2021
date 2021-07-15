@@ -1,0 +1,1 @@
+Hola mi nombre es Virginia, vivo en Barcelona y estoy cursando el bootcam fullstack de Neoland :)
