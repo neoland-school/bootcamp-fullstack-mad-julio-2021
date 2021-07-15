@@ -89,3 +89,17 @@
 // }
 
 // console.log(arrStr.filter(justLenghtImpair));
+
+
+//// EJERCICIOS DEL 13-07
+
+// Escribe una función que dado un array de números, lo devuelva ordenado (Hard)
+
+// let arrNumbers = [1,3,4,5,8,9];
+
+// function orderNumbers (a,b){
+//        return b - a;
+// }
+
+// console.log(arrNumbers.sort(orderNumbers));
+
