@@ -161,6 +161,15 @@
 //     }
 // }
 
+//- Crear dos variables que representen el peso y la altura e indicar por pantalla si esa persona tiene "Obesidad de clase II" o no según la OMS
+
+// const WEIGHT = 72;
+// const HEIGHT = 1.62;
+// let imc = WEIGHT / HEIGHT **2;
+
+// console.log( imc >= 35 &&  imc <= 39.9)
+
+
 // Build an algorithm that loops over numbers from 1 to 100 and prints:
 //  *  - 'Fizz' if the current number is multiple of 3
 //  *  - 'Buzz' if the current number is multiple of 5
@@ -191,9 +200,21 @@
 // *      *
 
 
+const triangulo = 5;
 
-for (let i = 0; i < 5; i++) {
-    i+=i = i+=i;
-    console.log('*');
+for (let i = 0; i <= triangulo; i++) {
+    let asterisco = '';   
+    for (let j=0; j<=i; j++){
+        asterisco += '*';
+    }
+    console.log(asterisco);
+}
+
+for (let i = triangulo-1; i>0; i--){
+    let asterisco = '';
+    for (let j=0; j<=i; j++){
+        asterisco +='*';
+    }
+    console.log(asterisco);
 }
 
