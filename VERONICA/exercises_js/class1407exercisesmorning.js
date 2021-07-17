@@ -78,28 +78,24 @@
 // que filtre un array de String
 // devuelva solo los impar
 
-// let arrStr = ['Nice', 'Beautiful', 'Ugly', 'Fabulous', 'Magic', 'Lives'];
+let arrStr = ['Nice', 'Beautiful', 'Ugly', 'Fabulous', 'Magic', 'Lives'];
 
-// function justLenghtImpair (arr){
-//      for (let i=0; i<arr.length; i++){
-//          if (arr.length %2!==0){
-//             return arr.length;
-//          }
-//      }
-// }
+function justLenghtImpair (arr){
+            return arr.length %2!==0;
+}
 
-// console.log(arrStr.filter(justLenghtImpair));
+console.log(arrStr.filter(justLenghtImpair));
 
 
 //// EJERCICIOS DEL 13-07
 
 // Escribe una función que dado un array de números, lo devuelva ordenado (Hard)
 
-// let arrNumbers = [1,3,4,5,8,9];
+let arrNumbers = [1,3,4,5,8,9];
 
-// function orderNumbers (a,b){
-//        return b - a;
-// }
+function orderNumbers (a,b){
+       return a - b;
+}
 
-// console.log(arrNumbers.sort(orderNumbers));
+console.log(arrNumbers.sort(orderNumbers));
 

@@ -53,7 +53,11 @@ console.log(arrStrTwo);
 
 
 // 6- (Medium) Crear una funcion que dado un array de strings, me devuelva los strings de la posicion de la mitad del array, los dos anteriores y los dos siguientes, en un mismo string separados por espacios
-// 7- (Medium) Crear una funcion que dado un array bidimensional de strings, lo convierta a un array unidimensional con todos los strings consegutivos.
+
+
+
+
+//7- (Medium) Crear una funcion que dado un array bidimensional de strings, lo convierta a un array unidimensional con todos los strings consegutivos.
 //    EJ: [['a','b'], ['c','d']] => ['a','b','c','d']
 // 8- (Hard)Cuando vamos a urgencias, nos atienden en recepción y nos asignan un orden para ser atendido.
 //   Este orden va en funcion de dos factores:
