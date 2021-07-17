@@ -157,7 +157,9 @@ let myFamily = {
 }
 
 function retValueofObj (value){
-    
+    let obj = {
+        
+    }
 }
 
 
@@ -165,3 +167,4 @@ function retValueofObj (value){
 // 4- Escribe una función que imprima por pantalla el `nombre:valor` de cada propiedad de un objeto
 // 5- Escribe una función que dado un array de objetos "producto", que contiene (id, nombre, tipo y precio), devuelva el precio total de todos los productos
 // 6- Escribe una función que dado un array de objetos "producto", que contiene (id, nombre, tipo y precio), devuelva cuantos tipos de producto existen
+
