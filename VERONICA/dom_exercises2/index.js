@@ -24,7 +24,7 @@ let ciudadTwo = {
 
 let ciudadThree = {
     nombre: 'Cartagena',
-    descripcion: 'Fue fundada el 29 de julio de 1525 por el español Rodrigo de Bastidas, lo que según los textos, la hace la ciudad en pie más antigua de Colombia. Es conocida por sus actividades turisticas, la historia de sus calles y sus playas.',
+    descripcion: 'Desde 1991 Cartagena es un Distrito Turístico y Cultural.8​ La ciudad está localizada a orillas del mar Caribe.',
     pais: 'Colombia',
     urlImagen: 'https://upload.wikimedia.org/wikipedia/commons/e/e8/Baluarte_de_Santiago_CTG_11_2019_9804.jpg',
     coordenadas: {
