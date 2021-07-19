@@ -1,0 +1,28 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: blue;
+    display: flex;
+}
+
+
+.card{
+    margin: 3%;
+    width: 18%;
+    background-color: white;
+}
+
+.img-foto{
+    max-width: 100%;
+    
+}
+
+.text-container {
+    padding: 6px;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
