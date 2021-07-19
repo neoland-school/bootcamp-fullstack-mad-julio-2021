@@ -29,7 +29,7 @@ let ciudadThree = {
     urlImagen: 'https://upload.wikimedia.org/wikipedia/commons/e/e8/Baluarte_de_Santiago_CTG_11_2019_9804.jpg',
     coordenadas: {
         latitud: '10.39972',
-        longitud: '--75.51444',
+        longitud: '-75.51444',
     },
     urlLink: 'https://es.wikipedia.org/wiki/Cartagena_de_Indias'
 }
