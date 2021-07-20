@@ -8,7 +8,8 @@ let ciudad = {
         longitud: '-74.1990400',
     },
     urlLink: 'https://es.wikipedia.org/wiki/Santa_Marta_(Colombia)',
-    day: '19 July 2021'
+    day: '19 July 2021',
+    titleimg: 'NEW'
 }
 
 let ciudadTwo = {
@@ -21,7 +22,8 @@ let ciudadTwo = {
         longitud: '-75.567',
     },
     urlLink: 'https://es.wikipedia.org/wiki/Medell%C3%ADn',
-    day: '19 July 2021'
+    day: '19 July 2021',
+    titleimg: 'NEW'
 
 }
 
@@ -35,7 +37,8 @@ let ciudadThree = {
         longitud: '-75.51444',
     },
     urlLink: 'https://es.wikipedia.org/wiki/Cartagena_de_Indias',
-    day: '19 July 2021'
+    day: '19 July 2021',
+    titleimg: 'NEW'
 
 }
 
@@ -47,6 +50,7 @@ function nameCities(ciudad) {
     const containerChildOne = document.createElement('div')
     const containerChildTwo = document.createElement('div')
     const containerChildThree = document.createElement('div')
+    const titleimg = document.createElement('p');
     const imagen = document.createElement('img');
     const title = document.createElement('h1');
     const paragraphDescription = document.createElement('p');
@@ -58,15 +62,18 @@ function nameCities(ciudad) {
     containerChildTwo.classList.add('text-container');
     title.classList.add('title');
     imagen.classList.add('img-foto');
+    titleimg.classList.add('titleimg');
     day.classList.add('text-day');
     paragraphDescription.classList.add('descript-card')
     containerChildThree.classList.add('div-link');
+    containerChildOne.classList.add('div-imag');
     link.classList.add('link-info');
     
    
 
     // ENLAZANDO CON EL OBJETO
     imagen.src = ciudad.urlImagen;
+    titleimg.textContent=ciudad.titleimg;
     title.textContent = ciudad.nombre;
     paragraphDescription.textContent = ciudad.descripcion;
     link.textContent = 'For more information.';
@@ -79,6 +86,7 @@ function nameCities(ciudad) {
     containerFather.appendChild(containerChildTwo);
     containerFather.appendChild(containerChildThree);
     containerChildOne.appendChild(imagen);
+    containerChildOne.appendChild(titleimg);
     containerChildTwo.appendChild(day);
     containerChildTwo.appendChild(title);
     containerChildTwo.appendChild(paragraphDescription);

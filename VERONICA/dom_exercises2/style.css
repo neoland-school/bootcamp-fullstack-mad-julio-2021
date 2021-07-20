@@ -34,9 +34,24 @@ body{
     color: rgb(134, 130, 130);
 }
 
+.div-img{
+    position: relative;
+}
+
+.titleimg{
+    position: absolute;
+    top: 30px;
+    /* flex-wrap: wrap;
+    margin: auto; */
+    color: white;
+    width: 100%;
+    padding: 8px;
+}
+
 .img-foto{
     max-width: 100%;
     margin-bottom: 10px;
+    display: block;
 }
 
 .descript-card{
