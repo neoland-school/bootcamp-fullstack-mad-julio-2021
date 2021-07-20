@@ -19,8 +19,8 @@ body{
 }
 
 .card{
-    margin: 2%;
-    width: 18%;
+    margin: 0.7rem;
+    width: 320px;
     background-color: white;
     flex: 0 0 300px;
     flex-direction: column;
@@ -40,19 +40,18 @@ body{
 
 .titleimg{
     position: absolute;
-    top: 30px;
-    /* flex-wrap: wrap;
-    margin: auto; */
+    top: 9px;
+    left: 10px;
     color: white;
     width: 100%;
-    padding: 8px;
+    height: 150px;
+    object-fit: fill;
 }
 
 .img-foto{
     max-width: 100%;
     margin-bottom: 10px;
     display: block;
-    height: 150px;
 }
 
 .descript-card{

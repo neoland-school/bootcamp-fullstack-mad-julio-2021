@@ -66,7 +66,7 @@ function nameCities(ciudad) {
     day.classList.add('text-day');
     paragraphDescription.classList.add('descript-card')
     containerChildThree.classList.add('div-link');
-    containerChildOne.classList.add('div-imag');
+    containerChildOne.classList.add('div-img');
     link.classList.add('link-info');
     
    
@@ -107,7 +107,7 @@ function nameCities(ciudad) {
 let arrCities = [ciudad, ciudadTwo, ciudadThree];
 
 function addCitiesToTheDom(arrcities) {
-    arrCities.forEach(e => document.body.appendChild(nameCities(e)));
+    arrCities.forEach(city => document.body.appendChild(nameCities(city)));
 }
 
 addCitiesToTheDom(arrCities);
