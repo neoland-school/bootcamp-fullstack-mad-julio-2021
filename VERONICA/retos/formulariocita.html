@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Citas</title>
+   </head>
+   <body>
+       <h1>Pide tu cita aquí:</h1>
+       <form action="www.google.com" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="apellido">Apellidos:</label>
+        <input type="text" id="apellido" name="apellido"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="fecha">Escoge tu fecha para la cita:</label>
+        <input type="date" id="fecha" name="fechacita" value="2021-07-02" min="2021-07-03" max="2021-12-31">><br><br>
+
+        <input type="submit" value="Enviar">
+      </form>
+   </body>
+
+</html>
