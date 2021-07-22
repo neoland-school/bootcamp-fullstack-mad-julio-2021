@@ -94,7 +94,14 @@ function diagonalArray(array) {
     }
 }
 
-let testArray = [[5,2,7,4,0,0],[8,1,0,0,0,0],[1,0,2,9,1,1],[9,4,2,1,1,0],[0,0,0,0,0,0],[1,1,1,1,1,1]];
+let testArray = [
+    [5, 2, 7, 4, 0, 0],
+    [8, 1, 0, 0, 0, 0],
+    [1, 0, 2, 9, 1, 1],
+    [9, 4, 2, 1, 1, 0],
+    [0, 0, 0, 0, 0, 0],
+    [1, 1, 1, 1, 1, 1]
+];
 
 console.log(testArray);
 
@@ -122,7 +129,7 @@ function orderArray(array) {
     return array;
 }
 
-testArray = [5,9,1,4,12,4,0];
+testArray = [5, 9, 1, 4, 12, 4, 0];
 
 console.log(orderArray(testArray));
 
@@ -140,7 +147,7 @@ function setWordHorizontal(array) {
         }
     }
 
-    for (let i = 0; i < array.length; i++){
+    for (let i = 0; i < array.length; i++) {
         gameBox[0][i] = array[i];
     }
 
@@ -157,7 +164,7 @@ function setWordVertical(array) {
         }
     }
 
-    for (let i = 0; i < array.length; i++){
+    for (let i = 0; i < array.length; i++) {
         gameBox[i][0] = array[i];
     }
 
@@ -174,14 +181,14 @@ function setWordDiagonal(array) {
         }
     }
 
-    for (let i = 0; i < array.length; i++){
+    for (let i = 0; i < array.length; i++) {
         gameBox[i][i] = array[i];
     }
 
     return gameBox;
 }
 
-let testWord = ['M','a','t','i','a','s'];
+let testWord = ['M', 'a', 't', 'i', 'a', 's'];
 
 console.log(setWordHorizontal(testWord));
 
@@ -191,82 +198,206 @@ console.log(setWordDiagonal(testWord));
 
 // ------------------------------------------
 
-function wordSearch (word, gameBox) {
-    let compareWord;
+// function wordSearch (word, gameBox) {
+//     let compareWord;
+//     let found = false;
+
+//     let i;
+//     let j;
+
+//     // Horizontal regular search
+//     i = 0;
+//     while (i < gameBox.length && !found) {
+//         compareWord = '';
+//         j = 0;
+//         while (j < gameBox.length && !found) {
+//             compareWord = compareWord + gameBox[i][j]; 
+//             j++;
+//         }
+//         if (compareWord.includes(word)) {
+//             found = true;
+//             return found;
+//         }
+//         i++;
+//     }
+
+//     // Horizontal inverted search
+//     i = 0;
+//     while (i < gameBox.length && !found) {
+//         compareWord = '';
+//         j = gameBox.length - 1;
+//         while (j >= 0 && !found) {
+//             compareWord = compareWord + gameBox[i][j]; 
+//             j--;
+//         }
+//         if (compareWord.includes(word)) {
+//             found = true;
+//             return found;
+//         }
+//         i++;
+//     }
+
+//     // Vertical regular search
+//     j = 0;
+//     while (j < gameBox.length && !found) {
+//         compareWord = '';
+//         i = 0;
+//         while (i < gameBox.length && !found) {
+//             compareWord = compareWord + gameBox[i][j]; 
+//             i++
+//         }
+//         if (compareWord.includes(word)) {
+//             found = true;
+//             return found;
+//         }
+//         j++;
+//     }
+
+//     // Vertical inverted search
+//     j = 0;
+//     while (j < gameBox.length && !found) {
+//         compareWord = '';
+//         i = gameBox.length - 1;
+//         while (i >= 0 && !found) {
+//             compareWord = compareWord + gameBox[i][j]; 
+//             i--;
+//         }
+//         if (compareWord.includes(word)) {
+//             found = true;
+//             return found;
+//         }
+//         j++;
+//     }
+//     return found;
+// }
+
+function wordSearch(word, gameBox) {
     let found = false;
+    let compareWord;
 
-    let i;
-    let j;
+    const charCandidate = word.charAt(0);
 
-    // Horizontal regular search
-    i = 0;
+    let i = 0;
     while (i < gameBox.length && !found) {
-        compareWord = '';
-        j = 0;
-        while (j < gameBox.length && !found) {
-            compareWord = compareWord + gameBox[i][j]; 
+        let j = 0;
+        while (j < gameBox[i].length && !found) {
+            if (gameBox[i][j] === charCandidate) {
+                //Horizontal search
+                compareWord = '';
+                k = j;
+                while (k < gameBox[i].length && !found) {
+                    compareWord = compareWord + gameBox[i][k];
+                    if (compareWord.includes(word)) {
+                        found = true;
+                        return found;
+                    }
+                    k++;
+                }
+                //Horizontal backwards search
+                compareWord = '';
+                k = j;
+                while (k >= 0 && !found) {
+                    compareWord = compareWord + gameBox[i][k];
+                    if (compareWord.includes(word)) {
+                        found = true;
+                        return found;
+                    }
+                    k--;
+                }
+                //Vertical search
+                compareWord = '';
+                k = i;
+                while (k < gameBox.length && !found) {
+                    compareWord = compareWord + gameBox[k][j];
+                    if (compareWord.includes(word)) {
+                        found = true;
+                        return found;
+                    }
+                    k++;
+                }
+                //Vertical backward search
+                compareWord = '';
+                k = i;
+                while (k >= 0 && !found) {
+                    compareWord = compareWord + gameBox[k][j];
+                    if (compareWord.includes(word)) {
+                        found = true;
+                        return found;
+                    }
+                    k--;
+                }
+                //Horizontal down search
+                compareWord = '';
+                k = i;
+                l = j;
+                while (k < gameBox.length && l < gameBox[i].length && !found) {
+                    compareWord = compareWord + gameBox[k][l];
+                    if (compareWord.includes(word)) {
+                        found = true;
+                        return found;
+                    }
+                    k++;
+                    l++;
+                }
+                //Horizontal down backward search
+                compareWord = '';
+                k = i;
+                l = j;
+                while (k < gameBox.length && l >= 0 && !found) {
+                    compareWord = compareWord + gameBox[k][l];
+                    if (compareWord.includes(word)) {
+                        found = true;
+                        return found;
+                    }
+                    k++;
+                    l--;
+                }
+                //Horizontal up search
+                compareWord = '';
+                k = i;
+                l = j;
+                while (k >= 0 && l < gameBox[i].length && !found) {
+                    compareWord = compareWord + gameBox[k][l];
+                    if (compareWord.includes(word)) {
+                        found = true;
+                        return found;
+                    }
+                    k--;
+                    l++;
+                }
+                //Horizontal up backward search
+                compareWord = '';
+                k = i;
+                l = j;
+                while (k >= 0 && l >=0 && !found) {
+                    compareWord = compareWord + gameBox[k][l];
+                    if (compareWord.includes(word)) {
+                        found = true;
+                        return found;
+                    }
+                    k--;
+                    l--;
+                }
+            }
             j++;
         }
-        if (compareWord.includes(word)) {
-            found = true;
-            return found;
-        }
-        i++;
-    }
-    
-    // Horizontal inverted search
-    i = 0;
-    while (i < gameBox.length && !found) {
-        compareWord = '';
-        j = gameBox.length - 1;
-        while (j >= 0 && !found) {
-            compareWord = compareWord + gameBox[i][j]; 
-            j--;
-        }
-        if (compareWord.includes(word)) {
-            found = true;
-            return found;
-        }
         i++;
     }
 
-    // Vertical regular search
-    j = 0;
-    while (j < gameBox.length && !found) {
-        compareWord = '';
-        i = 0;
-        while (i < gameBox.length && !found) {
-            compareWord = compareWord + gameBox[i][j]; 
-            i++
-        }
-        if (compareWord.includes(word)) {
-            found = true;
-            return found;
-        }
-        j++;
-    }
 
-    // Vertical inverted search
-    j = 0;
-    while (j < gameBox.length && !found) {
-        compareWord = '';
-        i = gameBox.length - 1;
-        while (i >= 0 && !found) {
-            compareWord = compareWord + gameBox[i][j]; 
-            i--;
-        }
-        if (compareWord.includes(word)) {
-            found = true;
-            return found;
-        }
-        j++;
-    }
+
     return found;
 }
 
-const testGameBox = [['e','h','q','h','h',],['v','h','q','j','h',],['a','v','a','l','l',],['l','q','q','h','h',],['l','h','v','b','h',]];
+const testGameBox = [
+    ['e', 'h', 'v', 'h', 'h', 'm'],
+    ['a', 'v', 'v', 'a', 'v', 'q'],
+    ['n', 'v', 'a', 'a', 'l', 'q'],
+    ['l', 'q', 'a', 'l', 'h', 'v'],
+    ['a', 'o', 'l', 'b', 'l', 'm']
+];
 testWord = 'llave';
 
 console.log(testGameBox, testWord);
 
-console.log(wordSearch(testWord,testGameBox));
+console.log(wordSearch(testWord, testGameBox));

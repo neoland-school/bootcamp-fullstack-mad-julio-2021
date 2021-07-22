@@ -26,42 +26,41 @@
 
 console.log('\nEXERCISE 1');
 
-function isEverythingOver10(array) {
-    function higherThan10(value) {
-        return value > 10;
-    }
-    return testArray.every(higherThan10);
-}
+const isEverthingOver10 = array => array.every(value => value > 10)
 
-let testArray = [11, 17, 18, 13, 15, 11, 11, 1, 17];
-console.log(isEverythingOver10(testArray));
+let testArray = [11, 17, 18, 13, 15, 11, 11, 11, 17];
+
+console.log(isEverthingOver10(testArray));
 
 //----------EXERCISE2----------
 
 console.log('\nEXERCISE 2');
 
-function isSomethingOver10(array) {
-    function higherThan10(value) {
-        return value > 10;
-    }
-    return testArray.some(higherThan10);
-}
+const isSomethingOver10 = array => array.some(value => value > 10)
 
-testArray = [2, 7, 8, 3, 5, 1, 1, 1, 17];
+testArray = [1, 7, 8, 3, 5, 1, 10, 6, 7];
+
 console.log(isSomethingOver10(testArray));
 
 //----------EXERCISE3----------
 
 console.log('\nEXERCISE 3');
 
-function toUpperUnmodified(array) {
-    function toUpperCaseEverything(value) {
-        return value.toUpperCase();
-    }
-    return array.map(toUpperCaseEverything);
-}
+// function toUpperUnmodified(array) {
+//     function toUpperCaseEverything(value) {
+//         return value.toUpperCase();
+//     }
+//     return array.map(toUpperCaseEverything);
+// }
+
+// testArray = ['caballo', 'perro', 'elefante', 'poni', 'mono'];
+
+// console.log(toUpperUnmodified(testArray));
+// console.log(testArray);
 
 testArray = ['caballo', 'perro', 'elefante', 'poni', 'mono'];
+
+const toUpperUnmodified = array => array.map(value => value.toUpperCase());
 
 console.log(toUpperUnmodified(testArray));
 console.log(testArray);
@@ -70,31 +69,46 @@ console.log(testArray);
 
 console.log('\nEXERCISE 4');
 
-function toUpperModified(array) {
+// function toUpperModified(array) {
 
-    function toUpperCaseEverything2(value, i, array) {
-        array[i] = array[i].toUpperCase();
-    }
+//     function toUpperCaseEverything2(value, i, array) {
+//         array[i] = array[i].toUpperCase();
+//     }
 
-    array.forEach(toUpperCaseEverything2);
+//     array.forEach(toUpperCaseEverything2);
 
-    return array;
-}
+//     return array;
+// }
 
-console.log(toUpperModified(testArray));
+// console.log(toUpperModified(testArray));
+
+const toUpperModified = array => array.forEach((value, i, array) => array[i] = array[i].toUpperCase());
+
+toUpperModified(testArray);
+
+console.log(testArray);
 
 //----------EXERCISE5----------
 
 console.log('\nEXERCISE 5');
 
+// testArray = ['caballo', 'perro', 'elefante', 'poni', 'mono', 'gato'];
+
+// function spliceToMiddle(array) {
+//     let removedTestArray = array.splice(Math.floor((array.length - 1) / 2), 1);
+//     return array;
+// }
+
+// console.log(spliceToMiddle(testArray));
+
 testArray = ['caballo', 'perro', 'elefante', 'poni', 'mono', 'gato'];
 
-function spliceToMiddle(array) {
-    let removedTestArray = array.splice(Math.floor((array.length - 1) / 2), 1);
-    return array;
-}
+const spliceToMiddle = array => array.splice(Math.floor((array.length - 1) / 2), 1);
 
-console.log(spliceToMiddle(testArray));
+let restArray = spliceToMiddle(testArray);
+
+console.log(testArray);
+console.log(restArray);
 
 //----------EXERCISE6----------
 
@@ -102,8 +116,20 @@ console.log('\nEXERCISE 6');
 
 testArray = ['caballo', 'perro', 'elefante', 'poni', 'mono', 'gato', 'jirafa', 'leon', 'pantera'];
 
-function sliceMiddle5width(array) {
+// function sliceMiddle5width(array) {
 
+//     let testArraySub = array.slice(Math.floor((array.length - 1) / 2), (Math.floor((array.length - 1) / 2) + 3));
+
+//     let testArraySub2 = array.slice((Math.floor((array.length - 1) / 2) - 2), (Math.floor((array.length - 1) / 2)));
+
+//     let testArrayFinal = testArraySub2.concat(testArraySub);
+
+//     return testArrayFinal.join(' ');
+// }
+
+// console.log(sliceMiddle5width(testArray));
+
+const sliceMiddle5width = array => {
     let testArraySub = array.slice(Math.floor((array.length - 1) / 2), (Math.floor((array.length - 1) / 2) + 3));
 
     let testArraySub2 = array.slice((Math.floor((array.length - 1) / 2) - 2), (Math.floor((array.length - 1) / 2)));
@@ -150,33 +176,24 @@ console.log(testArray.flat());
 console.log('\nEXERCISE 8');
 
 function nextPatient(arrayName, arrayCrit) {
-    let nextPatient;
-    let index = 0;
-    arrayCrit.forEach((value, i, array) => {
-        if (array[index] < array[i]) {
-            index = i;
-        }
-    })
+    arrayName.reverse();
+    arrayCrit.reverse();
 
-    nextPatient = arrayName.splice(index, 1) + ' -> Crit. Lvl: ' + arrayCrit.splice(index, 1);
+    let nextName = arrayName.pop();
+    let nextCrit = arrayCrit.pop();
 
-    return nextPatient;
+    arrayName.reverse();
+    arrayCrit.reverse();
+
+    return nextName
 }
 
-let testPatient = ['Marta', 'Jose', 'Jean', 'Jorge', 'Matias', 'Paloma', 'Pepe', 'Marcos', 'Juan'];
-let testCrit = [5, 6, 3, 6, 9, 3, 9, 4, 8];
+let testPatient = ['Matias', 'Jose', 'Jean', 'Jorge', 'Marta', 'Paloma'];
+let testCrit = [9, 6, 6, 5, 3, 3];
 
-console.log('Next patient is: ' + nextPatient(testPatient, testCrit));
+let whoIsNextPatient = nextPatient(testPatient, testCrit);
 
-console.log(testPatient);
-console.log(testCrit);
-
-console.log('Next patient is: ' + nextPatient(testPatient, testCrit));
-
-console.log(testPatient);
-console.log(testCrit);
-
-console.log('Next patient is: ' + nextPatient(testPatient, testCrit));
+console.log('Next patient is: ' + whoIsNextPatient);
 
 console.log(testPatient);
 console.log(testCrit);
