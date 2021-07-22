@@ -1,10 +1,10 @@
 // 5. Juego Sopa de letras (Legend):
 //     **Escribe una función que dado un array de palabras, devuelva un array bidimensional de caracteres en la que las letras de una palabra se encuentren seguidas (diagonal, vertical u horizontal)
 //     **Escribe una función que dado un array bidimensional de caracteres y un string, te diga si el string se encuentra o no en el array de letras (diagonal, vertical u horizontal)"
-
+'use strict';
 // VARIABLES
 let wordsArray = ['python', 'salami', 'futbol', 'zapato', 'cazado', 'jabali'/*, 'cazado', 'jabali'*/]; // 'pyth', 'sala', 'futb', 'zapa'
-let word = 'diego'; // 'tapa' works strange 'tuf' too
+let word = 'aza'; // 'tapa' works strange 'tuf' too
 let cont = 0;
 let foundWord = '';
 let myGameArray = sopaLetra(wordsArray);
@@ -14,6 +14,7 @@ let cuentaBusquedas = 0;
 function sopaLetra(array) {
 
     let letterBiDimArray = [];
+    let letra = ''
 
     for (let i = 0; i < array.length; i++) {
         letterBiDimArray[i] = []; // cada vez que vayamos a crear un elemento tipo array del array biDim, tenemos que definirlo previamente.
@@ -148,6 +149,8 @@ function searchAdjacents(i, j, cont) {
 
 function searchForWord(i, j) {
     let temp = '';
+    let indx = 0;
+    let indy = 0;
     foundWord = foundWord.slice(0, cont);
     //cleanSearch(i, j);
     for (indx = i; indx < myGameArray.length; indx++) {
