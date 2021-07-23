@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(./assets/icons/MaterialIcons-Regular.ttf)
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(./assets/icons/MaterialIcons-Regular.codepoints);
+}
+@font-face {
+    font-family: 'Material Icons Outline';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Material Icons Outline"),
+    local('Material Icons Outline'),
+    url(./assets/icons/MaterialIconsOutlined-Regular.codepoints);
+}
+@font-face {
+    font-family: 'Material Icons Outline';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Material Icons Outline"),
+    local('Material Icons Outline'),
+    url(./assets/icons/MaterialIconsOutlined-Regular.otf);
+}
+@font-face {
+    font-family: 'Material Icons Round';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Material Icons Round"),
+    local('Material Icons Round'),
+    url(./assets/icons/MaterialIconsRound-Regular.otf);    
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Material Icons"),
+    local('Material Icons'),
+    url(./assets/icons/MaterialIconsSharp-Regular.codepoints);
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Material Icons"),
+    local('Material Icons'),
+    url(./assets/icons/MaterialIconsTwoTone-Regular.codepoints);
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Material Icons"),
+    local('Material Icons'),
+    url(./assets/icons/MaterialIconsTwoTone-Regular.otf);
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Material Icons"),
+    local('Material Icons'),
+    url(./assets/icons/MaterialIconsRound-Regular.otf);
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr; }
+
+.material-icons-outline {
+        font-family: 'Material Icons Outline';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr; }
+
+    .material-icons-outline {
+    font-family: 'Material Icons Round';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr; }    

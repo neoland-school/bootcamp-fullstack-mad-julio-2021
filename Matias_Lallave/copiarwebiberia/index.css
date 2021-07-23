@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    --color-RedIberia: #D7192D;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-RedIberia);
+    height: 70px;
+    width: auto;
+}
+.nav-principal {
+    display: flex;
+    color: white;
+}
+.nav-principal li {
+    margin-right: 2rem;
+}
+
+
+/* PARTE DE JEAN, PALOMA Y MATIAS */
+
+.style-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.style-box{
+    border-left: 2px solid darkgrey;
+    width: 14.28%;
+    height: 40px;
+}
+
+.style-box-malapraxis{
+border-right: 2px solid darkgrey;
+}
+.style-box p{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
