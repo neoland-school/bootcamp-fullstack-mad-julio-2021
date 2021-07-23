@@ -119,10 +119,38 @@
 // SumAcc += i;
 // }
 // console.log (SumAcc);
-let SumAcc = 0;
-let i=0;
-while (i<=10000){
-    SumAcc += i;
-    i++;
+// let SumAcc = 0;
+// let i=0;
+// while (i<=10000){
+//     SumAcc += i;
+//     i++;
+// }
+// console.log(SumAcc);
+
+
+
+//FUNCIONES//
+
+// function convert ()
+
+
+// let myArray = ['gatos', 'perros', 'cucarachas', 'pájaro'] //para acceder a una posición... se abre corchetes dentro
+// console.log (myArray[3])
+
+//array bidimension:
+
+// let unidiensionalArray = [1,2,3,4,5] //dentro de esta array se puede tener arrays dentro. 
+let bidimensionalArray = [[1,2,3],[2,3,4],[2,3,5]]
+// this looks like
+// 1  2  3 
+// 2  3  4
+// 2  3  5 
+//cuando se quiere saber de que array se habla, es como unas coordinadas 
+// el numero 3 de la primera fila, serìa console.log (bidimensionalArray [0][2]
+
+for (let i=0; i>bidimensionalArray.length; i++){ //filas de array
+    for (let j=0; j<bidimensionalArray[i].length; j++){// columnas{
+    }
+
 }
-console.log(SumAcc);
+console.log (bidimensionalArray[i][j]);
