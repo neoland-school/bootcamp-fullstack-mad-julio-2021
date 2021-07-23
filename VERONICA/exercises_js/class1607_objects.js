@@ -119,6 +119,17 @@ const ENCENDIDO = (value, i) => coche[i].encendido===true;
 //  * 
 //  * 7- Hacer una funcion que me devuelva la velocidad media de todos los coches
 
+
+let velMedia =0;
+
+function speed (value,i, arr){
+    velMedia = velMedia + arr[i].velocidad;
+    return velMedia;
+}
+
+console.log(coche.map(speed));
+console.log(velMedia / coche.length);
+
 // EJERCICIOS DE LA TARDE
 
 
@@ -149,19 +160,105 @@ console.log(obWithHour(myStringHour));
 // 1. crear un objeto y un string (debe representar el nombre de la propiedad de ese objeto)
 // 2. devolver el valor de propiedad
 
-// let myFamily = {
-//     'Mother' : 'Irene',
-//     'Father' : 'Gustavo',
-//     'Sisters' : 'Natalia and Valeri',
-//     'Brothers' : 'Francisco and Santiago',
-// }
 
-// function retValueofObj (value){
-    
-// }
+let myFamily = {
+    'Mother' : 'Irene',
+    'Father' : 'Gustavo',
+    'Sisters' : 'Natalia and Valeri',
+    'Brothers' : 'Francisco and Santiago',
+}
+
+function retuValues (obj, prop, val){
+    let value = prop[value];
+    return value;
+}
+
+console.log(retuValues(myFamily));
+
 
 
 // 3- Escribe una función que dado un objeto y un string que representa el nombre de la propiedad de ese objeto, elimine esa propiedad del objeto
 // 4- Escribe una función que imprima por pantalla el `nombre:valor` de cada propiedad de un objeto
 // 5- Escribe una función que dado un array de objetos "producto", que contiene (id, nombre, tipo y precio), devuelva el precio total de todos los productos
 // 6- Escribe una función que dado un array de objetos "producto", que contiene (id, nombre, tipo y precio), devuelva cuantos tipos de producto existen
+
+// 1- Escribe una función que dado un string con una hora (EJ: 14:36:57) devuelva un objeto 
+// con las propiedades de hora, minutos y segundos del string (Hint: use the split function of strings)
+// */
+
+const hora = "14:36:57";
+
+function stringToOb(hora) {
+    horaArray = hora.split(":");
+
+    let horaObj = {
+        hora: '',
+        minuto: '',
+        segundo: ''
+    }
+
+    horaObj.hora = horaArray[0];
+    horaObj.minuto = horaArray[1];
+    horaObj.segundo = horaArray[2];
+
+    return horaObj;
+}
+
+console.log(stringToOb(hora));
+
+/*
+2- Escribe una función que dado un objeto y un string que representa el nombre de la propiedad 
+de ese objeto, devuelva el valor de esa propiedad
+*/
+
+const propiedad1 = "nombre";
+let objeto1 = {
+    "nombre": "Veronica",
+    "edad": 27
+}
+
+const propiedad2 = "edad";
+let objeto2 = {
+    "nombre": "Gustavo",
+    "edad": 27
+}
+
+function returnPropertyObj(objeto, string) {
+    return objeto[string];
+}
+
+console.log(returnPropertyObj(objeto1, propiedad1)) //"Veronica";
+console.log(returnPropertyObj(objeto2, propiedad2)) //27;
+
+
+/*
+3- Escribe una función que dado un objeto y un string que representa el nombre de la 
+propiedad de ese objeto, elimine esa propiedad del objeto
+*/
+
+function deletePropertyObj(obj, string) {
+    delete obj[string];
+    return obj;
+}
+
+console.log(deletePropertyObj(objeto1, propiedad1));
+
+/*
+4- Escribe una función que imprima por pantalla el `nombre:valor` de cada propiedad 
+de un objeto encapsulando cada propiedad por ()
+*/
+
+function printObj(obj) {
+    let stringReturn = '';
+    for (const [key, value] of Object.entries(obj)) {
+        stringReturn = stringReturn + (`(${key}: ${value})`) + '\n'; //String literal
+    }
+    return stringReturn;
+
+}
+console.log(printObj(objeto2))
+    /*
+    (nombre: Gustavo)
+    (edad: 27)
+    */
+
