@@ -1,0 +1,24 @@
+.form_email{
+  border: 4px solid;
+}
+
+.form_email:invalid {
+  border-color: red;
+}
+
+.form_email:valid {
+  border-color:green;
+}
+
+.form_email:focus {
+  border-color:orange;
+}
+
+.form_email::placeholder{
+  font-style: italic;
+}
+
+.form_email:hover{
+  background-color: black;
+  color: white;
+}

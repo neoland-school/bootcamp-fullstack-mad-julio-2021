@@ -1,0 +1,20 @@
+*{
+    margin:0%;
+    padding:0%
+}
+:root {
+    --color-default: lightgrey;
+    --color-primary:lime;
+    --color-success:mediumblue;
+    --bg-color: white
+
+}
+.theme-checkbox{
+    margin:0.5rem
+
+}
+
+.theme-checkbox:checked {
+    margin:3rem;
+    
+}

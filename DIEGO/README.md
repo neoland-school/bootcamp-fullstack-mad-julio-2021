@@ -1,9 +1,9 @@
 # Diego
 ## Tellez
 ### Barrero
-#### ___________________________________________________________________
-
 ##### En esta carpeta aparecerán todos los **ejercicios** de *Diego* para el ***Bootcamp Full Stack***
+
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/organization/repository)
 
 > Una gran responsabilidad requiere un gran poder. - Anonymous
 

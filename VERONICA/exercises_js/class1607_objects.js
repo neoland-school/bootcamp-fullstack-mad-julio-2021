@@ -119,6 +119,7 @@ const ENCENDIDO = (value, i) => coche[i].encendido===true;
 //  * 
 //  * 7- Hacer una funcion que me devuelva la velocidad media de todos los coches
 
+
 let velMedia =0;
 
 function speed (value,i, arr){
@@ -129,36 +130,36 @@ function speed (value,i, arr){
 console.log(coche.map(speed));
 console.log(velMedia / coche.length);
 
-
 // EJERCICIOS DE LA TARDE
 
 
 // 1- Escribe una función que dado un string con una hora (EJ: 14:36:57) devuelva un objeto con las propiedades de hora, minutos y segundos del string (Hint: use the split function of strings)
 
-// let myStringHour = '14:36:57';
+let myStringHour = '14:36:57';
 
-// function obWithHour (hour) {
-//     let obj = {
-//         'hour' : '',
-//         'minute' : '',
-//         'seg' : '',
-//     }
-//     const HOUR_ARRAY = hour.split(':');
+function obWithHour (hour) {0
+    let obj = {
+        'hour' : '',
+        'minute' : '',
+        'seg' : '',
+    }
+    const HOUR_ARRAY = hour.split(':');
 
-//     obj.hour = HOUR_ARRAY[0];
-//     obj.minute = HOUR_ARRAY[1];
-//     obj.seg = HOUR_ARRAY[2];
+    obj.hour = HOUR_ARRAY[0];
+    obj.minute = HOUR_ARRAY[1];
+    obj.seg = HOUR_ARRAY[2];
 
-//     return obj;
-// }
+    return obj;
+}
 
-// console.log(obWithHour(myStringHour));
+console.log(obWithHour(myStringHour));
 
 
 // 2- Escribe una función que dado un objeto y un string que representa el nombre de la propiedad de ese objeto, devuelva el valor de esa propiedad
 // crear funcion - deben darle objeto y string 
 // 1. crear un objeto y un string (debe representar el nombre de la propiedad de ese objeto)
 // 2. devolver el valor de propiedad
+
 
 let myFamily = {
     'Mother' : 'Irene',
@@ -260,5 +261,4 @@ console.log(printObj(objeto2))
     (nombre: Gustavo)
     (edad: 27)
     */
-
 

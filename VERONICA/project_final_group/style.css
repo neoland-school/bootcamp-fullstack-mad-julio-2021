@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* :root hace referencia a todo el html, aquí crearé las variables css*/
+:root {
+  --color-bg-nav: #fefefe;
+  --color-border-nav: #ddd;
+  --color-border-special-nav: #d5192d;
+}
+
+/*BARRA DE NAVEGACION*/
+
+.nav {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--color-bg-nav);
+  border-bottom: 2px solid var(--color-border-nav);
+  min-height: 2.8125rem;
+}
+
+.nav {
+  vertical-align: middle;
+}
+
+.nav-item-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.nav-item-bar:first-child {
+  border-left: 1px solid var(--color-border-nav);
+}
+
+.nav-item-bar:last-child {
+  border-right: 1px solid var(--color-border-nav);
+}
+
+.font-a {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(51, 51, 51);
+  line-height: 18px;
+  border: none;
+  background-color: transparent;
+}
+
+.nav:last-child {
+  outline: 3px  solid var(--color-border-special-nav);
+}
+
+.travel_block.li {
+  list-style-type: none;
+  text-align: center;
+  color: #333333;
+  width: 100%;
+  margin: auto;
+}
