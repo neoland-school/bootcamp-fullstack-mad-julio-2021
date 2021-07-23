@@ -1,0 +1,27 @@
+body{
+    display: inline-flex;
+    background-color: blue;
+}
+.card{
+
+    
+    width: 30%;
+    background-color: white;
+    padding: .5em;
+    margin: .25em;
+    border-radius: 0.5em;
+    box-shadow: 4px 4px 2px 1px rgba(194, 194, 248, 0.5);
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.foto{
+
+    align-items: center;
+    max-width:100%;
+    height: 200px; 
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
