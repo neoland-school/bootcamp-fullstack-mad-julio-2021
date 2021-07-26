@@ -30,11 +30,30 @@
     justify-content: space-evenly;
 }
 
+.pokedex_box_center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .card {
     margin-left: 0.1rem;
     margin-top: 0.5rem;
     margin-right: 0.1rem;
     border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-style: solid;
+    border-width: 0.01rem;
+    border-color: gray;
+    background-color: rgb(190, 190, 190);
+    height: 20%;
+    text-align: center;
+}
+
+.newCard {
+    margin-left: 0.1rem;
+    margin-top: 0.5rem;
+    margin-right: 0.1rem;
     border-top-right-radius: 5%;
     border-style: solid;
     border-width: 0.01rem;
@@ -66,6 +85,20 @@
     font-weight: bold;
     text-shadow: 1.7px 1.7px 1.7px black;
     padding: 0.3rem;
+}
+
+.back_button {
+    width: 25px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-left: 0.1rem;
+    margin-top: 0.5rem;
+    margin-right: 0.1rem;
+    border-style: solid;
+    border-width: 0.01rem;
+    border-color: gray;
+    background-color: rgb(190, 190, 190);
+    font-size: 1.2rem;
 }
 
 .fire_type {

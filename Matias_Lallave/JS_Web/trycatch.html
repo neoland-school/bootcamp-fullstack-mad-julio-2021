@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+         * Gestion de excepciones
+         * 
+         * - Cuando nosotros programamos, se producen errores al utilizar el lenguaje de programación
+         *      A esto se le conoces como excepciones
+         * - Para gestionar las excepciones utilizamos el try/catch
+         * 
+         * 
+         * */
+
+         const a = undefined;
+
+         // En algún punto del programa intento acceder a null o undefined
+
+         //GESTION MEDIANTE VALIDACION
+
+         if (a!==null && a !==undefined) {
+             console.log(a.demoProperty);
+         }else{
+             console.log('No se ha encontrado el objeto o lo que sea')
+         }
+
+        // GESTION MEDIANTE TRY/CATCH
+
+        // El codigo que pudiese lanzar excepcion lo envolvemos en un try
+        try{
+            console.log(a.demoProperty);
+            //A partir de aqui, si pilla algun error, no se ejecuta nada más
+        } catch (err){
+            // si lo que hay en el error falla, se ejecuta el bloque del catch y asi puedo gestionar la excepción
+            console.log('No se ha encontrado el objeto o lo que sea')
+        } finally{
+            //Esto se ejecuta siempre, tano cuando termine el try como cuando termine el catch
+        }
+
+        //Cuando programamos, podemos lanzar nosotros nuestros propios errores
+        // throw 'Esto es un error de demo';
+
+        function add (a,b){
+            //Que pasa si quien usa la funcion mete un string?
+            if (typeof a !== 'number') {
+                throw new TypeError ('El primer parámetro debe ser un tipo number')
+            }
+            return a + b;
+        }
+
+        console.log(add(1,3));
+
+        console.log(add('holakease',3));
+
+
+
+    </script>
+</body>
+</html>

@@ -92,7 +92,7 @@ function restart() {
 
 function showMoreData() {
     pokedexDOM.innerHTML = '';
-    
+
     const newcardDOM = printPokemon(arrayPokemon[this.id - 1]);
 
     const moreDataDOM = document.createElement('div');
@@ -110,7 +110,12 @@ function showMoreData() {
                             DEF: ${arrayPokemon[newcardDOM.id - 1].stats[2].base_stat}, 
                             SP-ATK: ${arrayPokemon[newcardDOM.id - 1].stats[3].base_stat}, 
                             SP-DEF: ${arrayPokemon[newcardDOM.id - 1].stats[4].base_stat}, 
-                            SPEED: ${arrayPokemon[newcardDOM.id - 1].stats[5].base_stat}]`
+                            SPEED: ${arrayPokemon[newcardDOM.id - 1].stats[5].base_stat}]`;
+
+    const newButtonDOM = document.createElement('button');
+    newButtonDOM.textContent = 'BACK';
+    newButtonDOM.addEventListener('click', restart);
+    newButtonDOM.classList.add('back_button');
 
     moreDataDOM.appendChild(weightDOM);
     moreDataDOM.appendChild(heightDOM);
@@ -118,9 +123,13 @@ function showMoreData() {
 
     newcardDOM.appendChild(moreDataDOM);
 
-    newcardDOM.addEventListener('click', restart);
-
+    pokedexDOM.appendChild(newButtonDOM);
     pokedexDOM.appendChild(newcardDOM);
+
+
+    pokedexDOM.classList.add('pokedex_box_center');
+    newcardDOM.classList.remove('card');
+    newcardDOM.classList.add('newCard');
 }
 
 function printPokemon(pokemon) {
@@ -163,25 +172,70 @@ function printPokemon(pokemon) {
 }
 
 function searching() {
-        pokedexDOM.innerHTML = '';
+    pokedexDOM.innerHTML = '';
 
-        arrayPokemon.filter(v => v.name.includes(searchBarDOM.value)).forEach(v => printPokemon(v));
+    arrayPokemon.filter(v => v.name.includes(searchBarDOM.value.toLowerCase())).forEach(v => printPokemon(v));
 }
 
 // --> FETCH AND SAVE POKEMONS IN A LOCAL ARRAY
 
 fetch(firstGen)
-    .then(response => response.json())
-    .then(data => {
-        data.results.forEach(v => {
-            fetch(v.url)
-                .then(response => response.json())
-                .then(data => {
-                    arrayPokemon.push(data);
-                    printPokemon(data);
-                })
-        });
+    .then(response => response.json()) // Esto genera una promesa, con sunstatus y su value conteniendo una response, con su codigo de respuesta, sus cabeceras y sus cosas. Le aplico un json para darle formato legible y sacar los datos en otra promesa
+    .then(data => { // Esto devuelve el objeto promesa con los datos solicitados, entre ellos hay un array de objetos con los valores name y url de cada pokemon, que tengo que recorrer para recuperar cada uno de los objetos pokemon. Para ello tendre que usar el allSettled y crear el primer "dique"
+        Promise.allSettled(data.results.map(v => fetch(v.url))) // Esto devuelve una promesa, y un array de lo que parecen ser responses, lo cual tiene sentido porque acabo de hacer otro fetch a cada una de las url de cada pokemon
+            .then(response => Promise.allSettled(response.map(v => v.value.json()))) // Lo que me salio de la anterior linea era una promesa con su status y su value, pero el value tenia un array con promesas cuyo value era responses, por tanto tengo que hacerle el json. el map me saca un array de promesas con los datos ya, espero
+            .then(data => data.forEach(pokemon => { //Aquí se recibe otra promesa, que en su value tiene un array con, ahora ya sí, los objetos pokemon que estabamos buscando, con lo cual podemos hacer un foreach para realizar nuestras cool stuffs (en este caso imprimir por pantalla y guardarlos en un array local)
+                arrayPokemon.push(pokemon.value);
+                printPokemon(pokemon.value);
+            }));
     });
+
+
+// fetch(firstGen)
+//     .then(response => response.json())
+//     .then(data => {
+//         Promise.allSettled(data.results.map(v => fetch(v.url)))
+//             .then(res => Promise.allSettled(res.map(e => e.value.json())))
+//             .then(res => res.forEach(pokemon => {
+//                 arrayPokemon.push(pokemon.value);
+//                 printPokemon(pokemon.value);
+//             }));
+//     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const promises = [fetch('https://pokeapi.co/api/v2/pokemon/1/'), fetch('https://pokeapi.co/api/v2/pokemon/2/')];
+
+
+// Promise.allSettled(promises)
+// .then(res => Promise.allSettled(res.map(e => e.value.json())))
+// .then(res => res.forEach(p => printPokemon(p.value)));
 
 
 // --> SEARCHING BAR
