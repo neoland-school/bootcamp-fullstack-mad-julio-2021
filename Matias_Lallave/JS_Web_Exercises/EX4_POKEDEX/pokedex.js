@@ -190,46 +190,6 @@ fetch(firstGen)
             }));
     });
 
-
-// fetch(firstGen)
-//     .then(response => response.json())
-//     .then(data => {
-//         Promise.allSettled(data.results.map(v => fetch(v.url)))
-//             .then(res => Promise.allSettled(res.map(e => e.value.json())))
-//             .then(res => res.forEach(pokemon => {
-//                 arrayPokemon.push(pokemon.value);
-//                 printPokemon(pokemon.value);
-//             }));
-//     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // const promises = [fetch('https://pokeapi.co/api/v2/pokemon/1/'), fetch('https://pokeapi.co/api/v2/pokemon/2/')];
 
 
