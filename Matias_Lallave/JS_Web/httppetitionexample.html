@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Petición GET
+        //Voy a solicitar un pokemon
+        console.log('Pidiendo pokemon')
+        fetch('https://pokeapi.co/api/v2/pokemon/ditto').then(function (res) {
+            return res.json();
+        }).then(function(data){
+            console.log(data);
+        });
+
+        // fetch('../JS_Web/index.js')
+        fetch('http://localhost:5500/JS_Web/index.js').then(function (res) {
+            return res.text();
+        }).then(function(data){
+            const pre = document.createElement('pre');
+            pre.textContent = data;
+            document.body.appendChild(pre);
+        });
+
+        // Petición POST
+        const requestOpts = {
+            method: 'POST'
+        }
+
+        fetch('url', requestOpts)
+        .then(console.log)
+        .then(console.log)
+        .catch(console.warn);
+
+
+    </script>
+</body>
+</html>
