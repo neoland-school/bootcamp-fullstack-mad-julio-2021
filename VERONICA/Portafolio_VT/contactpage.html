@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacta a Verónica Tobias</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contáctame!</h1>
+    </header>
+    <section>
+      <form name="formulario" method="post" action="/send.php">
+        <label for="name">Nombre:</label>
+        <input
+          id="name"
+          type="texto"
+          name="name"
+          placeholder="Escribe tu nombre"
+          required
+        /><br />
+
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Escribe tu Email"
+          required
+        /><br />
+
+        <label for="telefono">Teléfono:</label>
+        <input
+          type="tel"
+          name="telefono"
+          placeholder="Escribe tu teléfono"
+        /><br />
+
+        <label for="empleo">Deseas trabajar conmigo?</label><br />
+        <input id="empleo" type="checkbox" name="empleo" />Si
+
+        <label for="formacion">Deseas aprender a programar?</label><br />
+        <input id="formacion" type="checkbox" name="formacion" />Si
+
+        <label for="message">Mensaje:</label><br />
+        <textarea name="texto" cols="70" rows="10"></textarea><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+    <aside>
+      <h2>También me puedes encontrar aquí:</h2>
+      <h3>Número profesional:</h3>
+      <a href="tel:+4568296152">+456 829 6152</a>
+      <h3>Correo electrónico:</h3>
+      <a href="mailto:hola@gmail.es">hola@gmail.es</a>
+    </aside>
+  </body>
+</html>

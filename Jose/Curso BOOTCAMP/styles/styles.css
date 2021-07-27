@@ -1,41 +1,5 @@
-    .contenedor {
-        display: flex;
-    }
-    
-    .naveg {
-        justify-content: flex-end;
-    }
-    
-    .naveg>li {
-        display: inline-flex;
-        margin: 0 2rem;
-    }
-    
-    div.home {
-        justify-content: center;
-    }
-    
-    h1 {
-        text-align: center;
-        text-transform: uppercase;
-    }
-    
-    h2 {
-        text-transform: uppercase;
-    }
-    
-    h2.encabezados {
-        text-align: center;
-    }
-    
-    h3 {
-        text-transform: uppercase;
-    }
-    
-    ul {
-        list-style: none;
-    }
-    
-    a {
-        text-decoration: none;
-    }
+
+
+
+
+
