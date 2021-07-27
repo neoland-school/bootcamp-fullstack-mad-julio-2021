@@ -120,20 +120,24 @@ let asig_English = {
 // document.body.appendChild(PROFESOR_EMAIL);
 
 // // 7- Tenemos que pintar todos los profesores de la asignatura
-let prof = "";
-for (let i = 0; i < arr.length; i++) {
-    prof += arr[i] + "<br>";
+
+ 
+
+  for (const property in object) {
+
+    const primerProf = document.createElement('p');
+    primerProf.textContent = `${property}: ${asig_English[property]}`;
+     document.body.appendChild(primerProf);  
   }
-  
 
 
-const primerProf = document.createElement('p');
-primerProf.textContent = asig_English.profesor[0].nombre + ': ' + asig_English.profesor[0].email;
-document.body.appendChild(primerProf);
+// const primerProf = document.createElement('p');
+// primerProf.textContent = asig_English.profesor[0].nombre + ': ' + asig_English.profesor[0].email;
+// document.body.appendChild(primerProf);
 
-const segundoProf = document.createElement('p');
-segundoProf.textContent = asig_English.profesor[1].nombre + ': ' + asig_English.profesor[1].email;
-document.body.appendChild(segundoProf);
+// const segundoProf = document.createElement('p');
+// segundoProf.textContent = asig_English.profesor[1].nombre + ': ' + asig_English.profesor[1].email;
+// document.body.appendChild(segundoProf);
 
 
 
