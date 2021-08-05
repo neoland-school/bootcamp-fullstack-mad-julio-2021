@@ -1,0 +1,82 @@
+.main {
+  margin: auto;
+  width: 55%;
+  text-align: justify;
+}
+
+.title {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.first-title {
+  font-size: 60px;
+  color: var(--grey-medium);
+  margin-bottom: 3rem;
+  line-height: 65px;
+}
+
+.sub-title {
+  color: var(--grey-ligth);
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 41px;
+  margin-bottom: 1, 5rem;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.before-tutorial {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.before-start-title {
+  font-weight: 700px;
+  line-height: 42px;
+  color: var(--black);
+  font-size: 35px;
+  margin-bottom: 2rem;
+}
+
+.paragraph-before-tutorial {
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--black);
+  line-height: 1.7;
+  max-width: 42em;
+}
+
+.text-black {
+  font-weight: 700;
+}
+
+.tip {
+  background-color: var(--other-white);
+  border-left: 8px solid var(--yellow);
+  border-left-width: 9px;
+  border-left-style: solid;
+  padding: 20px 45px 20px 26px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-left: -30px;
+  margin-right: -30px;
+  line-height: 25px;
+}
+
+.text-guide {
+  background-color: var(--link-bg);
+  text-decoration: var(--grey-ligth);
+  color: var(--black);
+}
+
+.text-guide:hover {
+  background-color: var(--blue-ligth);
+}

@@ -1,0 +1,31 @@
+.container-task{
+    /* background-color:#f6f8fa; */
+    width: 40%;
+    height: 12%;
+    display:flex;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0.1rem solid #cfcece;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.text-task{
+    width: 90%;
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+.title-color{
+    color:#0366d6;
+}
+
+.icon-red{
+    color:#cb2431;
+}
+
+.icon-green{
+    color:#22863a;
+}
