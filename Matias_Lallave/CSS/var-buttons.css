@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* NORMAL THEME */
+  --color-red: red;
+  --color-green: rgb(0, 255, 0);
+  --color-blue: rgb(0, 0, 255);
+  --color-indigo: #4b0082;
+  --color-pink: #ffc0cb;
+  --color-orange: #ffa500;
+  --bg-color: white;
+  --label-color: black;
+
+  /* INV THEME */
+  --inv-color-red: #33ffff;
+  --inv-color-green: #ff00ff;
+  --inv-color-blue: #ffff00;
+  --inv-color-indigo: #b4ff7d;
+  --inv-color-pink: #003f34;
+  --inv-color-orange: #005aff;
+  --inv-bg-color: black;
+  --inv-label-color: white;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+    
+}
+
+.simbody{
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+.button{
+    min-width: 5rem;
+    min-height: 3rem;
+    padding: 0.5rem;
+    border: 0.1rem normal;
+    border-radius: 5%;
+    margin: 0.5rem;
+}
+
+.button-red {
+  background-color: var(--color-red);
+}
+
+.button-green {
+  background-color: var(--color-green);
+}
+
+.button-blue {
+  background-color: var(--color-blue);
+}
+
+.button-indigo {
+  background-color: var(--color-indigo);
+}
+
+.button-pink {
+  background-color: var(--color-pink);
+}
+
+.button-orange {
+  background-color: var(--color-orange);
+}
+
+.invert_checkbox:checked ~ .simbody {
+    --color-red: var(--inv-color-red);
+    --color-blue: var(--inv-color-blue);
+    --color-green: var(--inv-color-green);
+    --color-indigo: var(--inv-color-indigo);
+    --color-pink: var(--inv-color-pink);
+    --color-orange: var(--inv-color-orange);
+    --bg-color: var(--inv-bg-color);
+    --label-color: var(--inv-label-color);
+}
+
+.invert_checkbox{
+    display: none;
+}
+
+.inv-label{
+    color: var(--label-color);
+}

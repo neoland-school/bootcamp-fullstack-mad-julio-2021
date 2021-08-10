@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-blue: #1e90ff;
+    --green: green;
+    --color-clearBlue: #1e90ff;
+    --color-yellow: yellow;
+    --color-red: red;
+    --color-white: white;
+    --color-black: black;
+    --colorText-white: rgba(255, 255, 255, 0.883);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.btn-1 {
+    margin-right: 4px;
+    background-color: var(--color-white);
+    border-style: none;
+    border-radius: 10%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-2 {
+    background-color: var(--color-blue);
+    color: var(--colorText-white);
+    margin-right: 4px;
+    border-style: none;
+    border-radius: 10%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-3 {
+    background-color: var(--green);
+    color: var(--colorText-white);
+    margin-right: 4px;
+    border-style: none;
+    border-radius: 10%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-4 {
+    background-color: var(--color-clearBlue);
+    color: var(--colorText-white);
+    margin-right: 4px;
+    border-style: none;
+    border-radius: 10%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-5 {
+    background-color: var(--color-yellow);
+    color: var(--colorText-white);
+    ;
+    margin-right: 4px;
+    border-style: none;
+    border-radius: 10%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-6 {
+    background-color: var(--color-red);
+    color: var(--colorText-white);
+    margin-right: 4px;
+    border-style: none;
+    border-radius: 10%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-7 {
+    border-style: none;
+    background-color: var(--color-white);
+    border-radius: 10%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.checkbox {
+    display: none;
+}
+
+input:checked+.btn {
+    background-color: var(--color-black);
+    --color-blue: var(--color-white);
+    --green: var(--color-white);
+    --color-clearBlue: var(--color-white);
+    --color-yellow: var(--color-white);
+    --color-red: var(--color-white);
+    --colorText-white: var(--color-black);
+}
