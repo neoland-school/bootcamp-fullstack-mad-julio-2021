@@ -10,6 +10,7 @@ import ParrafoUseState from '../../components/another-useStateExerc';
 import ListaComponent from '../../components/form-hook-exerc';
 import { styled } from '@material-ui/core/styles'; //API de Styled components
 import Button from '@material-ui/core/Button';
+import { useEffect, useState } from "react";
 import './style.css';
 
 const MyButton = styled(Button)({
@@ -24,6 +25,21 @@ const MyButton = styled(Button)({
 function PaginaUno() {
 
 
+//   let countries = [];
+  let [countries, updateCountries] = useState([]);
+
+  useEffect(() => {
+    fetch("https://run.mocky.io/v3/5db18906-a9c2-4f4a-ad94-a14c40611157")
+      .then((r) => r.json())
+      .then((d) => updateCountries(d.countries));
+  }, []);
+  /**
+   * Vacio: Solo se va a ejecutar la primera vez que pinte el componente (Mount)
+   * Con variables(deps): Se va a ejecutar la primera vez (Mount) 
+   *                    y cada vez que cambie alguna de esas variables (Update)
+   */
+
+
   //El que envia
   return (
     <div className="main-container">
@@ -32,6 +48,11 @@ function PaginaUno() {
 
       <Link to="/pages/PaginaDos/?parrafo=Veronica">Mi pagina dos</Link>
       <PaginaDos />
+      
+      <div><h1>Este es el prefijo telefónico de mi pais : {countries?.find(c => c.name_es === 'Colombia').dial_code}</h1></div>
+
+
+
       </div>
       <div className='mini-container'>
       <h3 className="title-container">Esta es mi cajita de la task haciendo comunicación padre a hijo con las props</h3>
