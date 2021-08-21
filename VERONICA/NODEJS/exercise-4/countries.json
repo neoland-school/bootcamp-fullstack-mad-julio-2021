@@ -1,0 +1,164 @@
+[
+    {
+        "name_en": "AmericanSamoa",
+        "name_es": "Samoa Americana",
+        "dial_code": "+1684",
+        "code": "AS"
+    },
+    {
+        "name_en": "Angola",
+        "name_es": "Angola",
+        "dial_code": "+244",
+        "code": "AO"
+    },
+    {
+        "name_en": "Anguilla",
+        "name_es": "Anguilla",
+        "dial_code": "+1264",
+        "code": "AI"
+    },
+    {
+        "name_en": "Argentina",
+        "name_es": "Argentina",
+        "dial_code": "+54",
+        "code": "AR"
+    },
+    {
+        "name_en": "Armenia",
+        "name_es": "Armenia",
+        "dial_code": "+374",
+        "code": "AM"
+    },
+    {
+        "name_en": "Azerbaijan",
+        "name_es": "Azerbaiyán",
+        "dial_code": "+994",
+        "code": "AZ"
+    },
+    {
+        "name_en": "French Guiana",
+        "name_es": "Guayana Francesa",
+        "dial_code": "+594",
+        "code": "GF"
+    },
+    {
+        "name_en": "Guernsey",
+        "name_es": "Guernsey",
+        "dial_code": "+44",
+        "code": "GG"
+    },
+    {
+        "name_en": "Guinea",
+        "name_es": "Guinea",
+        "dial_code": "+224",
+        "code": "GN"
+    },
+    {
+        "name_en": "Honduras",
+        "name_es": "Honduras",
+        "dial_code": "+504",
+        "code": "HN"
+    },
+    {
+        "name_en": "Iceland",
+        "name_es": "Islandia",
+        "dial_code": "+354",
+        "code": "IS"
+    },
+    {
+        "name_en": "Iraq",
+        "name_es": "Iraq",
+        "dial_code": "+964",
+        "code": "IQ"
+    },
+    {
+        "name_en": "Isle of Man",
+        "name_es": "Isla de Man",
+        "dial_code": "+44",
+        "code": "IM"
+    },
+    {
+        "name_en": "Jersey",
+        "name_es": "Jersey",
+        "dial_code": "+44",
+        "code": "JE"
+    },
+    {
+        "name_en": "Kenya",
+        "name_es": "Kenia",
+        "dial_code": "+254",
+        "code": "KE"
+    },
+    {
+        "name_en": "Montserrat",
+        "name_es": "Montserrat",
+        "dial_code": "+1664",
+        "code": "MS"
+    },
+    {
+        "name_en": "Namibia",
+        "name_es": "Namibia",
+        "dial_code": "+264",
+        "code": "NA"
+    },
+    {
+        "name_en": "Nauru",
+        "name_es": "Nauru",
+        "dial_code": "+674",
+        "code": "NR"
+    },
+    {
+        "name_en": "New Zealand",
+        "name_es": "Nueva Zelanda",
+        "dial_code": "+64",
+        "code": "NZ"
+    },
+    {
+        "name_en": "Nigeria",
+        "name_es": "Nigeria",
+        "dial_code": "+234",
+        "code": "NG"
+    },
+    {
+        "name_en": "Qatar",
+        "name_es": "Qatar",
+        "dial_code": "+974",
+        "code": "QA"
+    },
+    {
+        "name_en": "Saint Vincent and the Grenadines",
+        "name_es": "San Vicente y las Granadinas",
+        "dial_code": "+1784",
+        "code": "VC"
+    },
+    {
+        "name_en": "Spain",
+        "name_es": "España",
+        "dial_code": "+34",
+        "code": "ES"
+    },
+    {
+        "name_en": "Sri Lanka",
+        "name_es": "Sri Lanka",
+        "dial_code": "+94",
+        "code": "LK"
+    },
+    {
+        "name_en": "United Kingdom",
+        "name_es": "Reino Unido",
+        "dial_code": "+44",
+        "code": "GB"
+    },
+    {
+        "name_en": "Vietnam",
+        "name_es": "Vietnam",
+        "dial_code": "+84",
+        "code": "VN"
+    },
+    {
+        "name_en": "Virgin Islands, British",
+        "name_es": "Islas Vírgenes Británicas",
+        "dial_code": "+1284",
+        "code": "VG"
+    }
+]
